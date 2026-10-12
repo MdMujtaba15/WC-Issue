@@ -1,0 +1,29 @@
+2026-10-06 21:17:38,229 - lob.base - INFO - Prior month Folder Date is : 08-19-2026
+2026-10-06 21:17:38,261 - lob.base - INFO - --------------------Execution started for script: 1. Data Prep - WC WPC Data Prep.sas--------------------
+2026-10-06 22:02:46,147 - lob.base - INFO - SAS script 1 executed successfully
+2026-10-06 22:02:46,171 - lob.base - INFO - Output file generated: wc_wpc_for_scoring.sas7bdat and WC_WPC_for_scoring.csv
+2026-10-06 22:02:46,196 - lob.base - INFO - Execution Time: 45 min 7 sec
+2026-10-06 22:02:46,226 - lob.base - INFO - --------------------Execution ends: 1. Data Prep - WC WPC Data Prep.sas--------------------
+2026-10-06 22:02:46,266 - lob.base - INFO - --------------------Execution started for script: 2. WC WPC - Model Scoring Final.exe--------------------
+2026-10-06 22:02:46,309 - lob.base - INFO - Fetching Data - WC_WPC_for_scoring.csv
+2026-10-06 22:03:01,825 - lob.base - INFO - WC_WPC_for_scoring read success
+2026-10-06 22:03:01,990 - lob.base - INFO - Loading WCv21 from current location
+2026-10-06 22:03:02,257 - lob.base - INFO - Processing Data using Model
+2026-10-06 22:03:05,439 - lob.base - INFO - Fetching SHAP values
+2026-10-06 22:03:12,737 - lob.base - INFO - Exporting Output: model_shap.csv
+2026-10-06 22:13:27,038 - lob.base - INFO - Model executed successfully
+2026-10-06 22:13:27,069 - lob.base - INFO - Output file generated: model_shap.csv
+2026-10-06 22:13:27,125 - lob.base - INFO - Execution Time: 10 min 40 sec
+2026-10-06 22:13:27,151 - lob.base - INFO - --------------------Execution ends: 2. WC WPC - Model Scoring Final.exe--------------------
+2026-10-06 22:13:27,177 - lob.base - INFO - --------------------Execution started for script: 3. Import and Prep Python Output FINAL.sas--------------------
+2026-10-06 22:13:27,658 - lob.base - INFO - Input parameters to the script: {'FolderDt': '09-30-2026', 'Month': 9, 'Day': 30, 'Year': 2026, 'flag': 0, 'output_path_csv': '/ere/local/shared/actuarial/Share/Claims/WPC/Workers Comp/2026/09-30-2026'}
+2026-10-06 22:13:38,827 - lob.base - INFO - Execution Time: 0 min 11 sec
+2026-10-06 22:13:38,856 - lob.base - INFO - --------------------Execution ends: 3. Import and Prep Python Output FINAL.sas--------------------
+2026-10-06 22:13:38,882 - lob.base - INFO - --------------------Execution started for script: Create Next Month Folder--------------------
+2026-10-06 22:13:38,907 - lob.base - INFO - The next month folder date is: 10-28-2026
+2026-10-06 22:13:38,999 - lob.base - INFO - Year folder already exists
+2026-10-06 22:13:39,093 - lob.base - INFO - Next month folder created Successfully
+2026-10-06 22:13:39,117 - lob.base - INFO - Execution Time: 0 min 0 sec
+2026-10-06 22:13:39,143 - lob.base - INFO - --------------------Execution ends: Create Next Month Folder--------------------
+2026-10-06 22:13:39,177 - lob.base - INFO - All Scripts Executed
+2026-10-06 22:13:39,205 - lob.base - INFO - Complete Execution Time: 56 min 1 sec
