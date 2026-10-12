@@ -1,0 +1,57 @@
+
+/* Python now exports clean SHAP column names.
+   Do not use the old __AGE_CURR___, __BMI___, etc. renames. */
+
+/* Continue with the existing Python output preparation */
+data python2;
+    set pythonraw (drop=var1);
+
+    Claim = sum(
+        INCID_RPT_ONLY,
+        INSD_PNL_EXST,
+        VCTNL_RHAB_INCL_INDEM,
+        MECH_DFCT_INVLV,
+        MIDDLE_MARKET,
+        FRTH_TRTMT_REQR,
+        INJ_PRMIS,
+        INJ_REG_JOB,
+        LOSS_CAUSE_FALLSLIPTRIP,
+        LOSS_CAUSE_CUTSCRAPE,
+        LOSS_CAUSE_STRAIN,
+        LOSS_CAUSE_VEH,
+        PRIOR_TRTMT_EXST
+    );
+
+    Territory = sum(
+        JURIS_STATE_PA,
+        JURIS_STATE_VA,
+        JURIS_STATE_MD,
+        JURIS_STATE_NY,
+        JURIS_STATE_WV,
+        JURIS_STATE_WI,
+        JURIS_STATE_NC,
+        JURIS_STATE_TN,
+        JURIS_STATE_IL,
+        JURIS_STATE_IN,
+        JURIS_STATE_WASHDC
+    );
+
+    Medical = sum(
+        NCCI_INJ_TYP_MEDONLY,
+        NCCI_INJ_TYP_TEMPORARYINJ,
+        NCCI_INJ_TYP_PERMPARTIAL,
+        NCCI_INJ_TYP_PERMTOTAL,
+        NCCI_LOSS_TYP_TRAUMA,
+        NCCI_LOSS_TYP_CUMULATIVE,
+        PHYS_RSTRC,
+        BMI,
+        CORP_REFL_PRLYS,
+        PRIM_BODY_PART_TRUNK,
+        PRIM_BODY_PART_MULTIPLE,
+        PRIM_BODY_PART_NECKHEAD,
+        AGE_CURR
+    );
+
+    /* Keep the remaining existing statements from your original
+       DATA PYTHON2 step here, unchanged. */
+run;
