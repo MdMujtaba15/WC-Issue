@@ -1,0 +1,8 @@
+AdjusterRegion	AdjusterTeamBranch	AdjPosition	AdjNm	AdjNumber	SupvNam	SupvNum	payperioddate	year	month	EmpID_PP	AssignedClaim	Open	Completed	TotalHours	TotalRegHours	TotalOTHoursPaid	norm_adj	Claim_r	Territory_r	Medical_r	Investigation_r	adj_br	adj_rgn
+Northeast	WC NE-PA	Sr Workers Comp Adjuster	Hunt, Suzanne	S2102	Nuara, Jason	J7993	12/29/2021	2021	12	S210220211229	1			37.5	37.5	0	1	1	1	1	1	1	1
+Northeast	WC NE-PA	Sr Workers Comp Adjuster	Zimmerman, Lisa	L7252	Nuara, Jason	J7993	12/29/2021	2021	12	L725220211229			6	30	30	0	1	1	1	1	1	1	1
+Northeast	WC NE-PA	Sr Workers Comp Adjuster	Fillman, Barbara	B7419	Nuara, Jason	J7993	12/29/2021	2021	12	B741920211229	1		5	67.5	67.5	0	1	1	1	1	1	1	1
+Northeast	WC NE-PA	Sr Workers Comp Adjuster	Wagner, Dawn	D209A	Nuara, Jason	J7993	12/29/2021	2021	12	D209A20211229	2		2	67.5	67.5	0	1	1	1	1	1	1	1
+Northeast	WC NE-PA	Sr Workers Comp Adjuster	Knight, Tania	T4145	Nuara, Jason	J7993	12/29/2021	2021	12	T414520211229	2			67.5	67.5	0	1	1	1	1	1	1	1
+Northeast	WC NE-PA	Sr Workers Comp Adjuster	Fillman, Barbara	B7419	Nuara, Jason	J7993	1/12/2022	2022	1	B741920220112	8	91	5	67.5	67.5	0	0.97	1	1	1	1	0.99	0.99
+Northeast	WC NE-PA	Sr Workers Comp Adjuster	Zimmerman, Lisa	L7252	Nuara, Jason	J7993	1/12/2022	2022	1	L725220220112	4	98	1	60	60	0	1.01	1	1	1	1	0.99	0.99
