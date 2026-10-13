@@ -1,9 +1,26 @@
 Hi Chris, I reviewed the WC SAS log and found a few issues in Section 4 that could be causing the incorrect values in the Qlik output.
-
 The SHAP CSV file is loading successfully, but SAS seems unable to match some of the column names correctly. As a result, the calculations based on these columns are not working, and the SHAP results are coming through as missing for all 157,308 records.
-
 I also noticed that the code replaces missing adjustment ranks with 1, which could explain why some columns in the Qlik output are showing 1 instead of the expected values.
-
 Additionally, the merge between `WC_CLAIMS1` and `PYTHON2` is producing more rows than expected (157,570 instead of 157,308). I’ll check whether duplicate records or matching issues are causing this.
-
 My next step is to verify the column names in `model_shap.csv`, fix the naming mismatch, and validate the calculations and merge. Once these issues are resolved, I’ll check whether any changes to the default adjustment logic are needed.
+
+
+
+
+
+Hi Chris,
+
+Here’s a brief update on the Liability WPC work:
+
+- **Template Changes:** Reviewed Mary Beth’s new Click template, mapped the renamed and new columns, and updated the SAS scripts to accommodate the new structure while preserving existing business logic.
+- **SAS Scripts 1 and 2:** Investigated the `PayPeriodEnd` date-handling issues and reviewed the logs to identify the source of failures.
+- **Python Scoring:** Fixed the missing-value handling issue in `liability.py`. The Python scoring step is now completing successfully and generating `model_shap.csv`.
+- **Script 4:** Identified a character-versus-numeric mismatch in `PayPeriodEnd` that prevents the historical exposure files from combining correctly. I also identified a potential mismatch in the region-level aggregation.
+- **Changes Prepared:** Updated Script 4 to standardize date formats, improve key comparisons, and align region-level grouping with the final joins while preserving the existing calculations and output structure.
+
+**Next Steps:** I’ll test the updated Script 4 in Testing 2, review any remaining errors, and validate `QlikSuperfile_liab.xlsx` and `QlikAdjustments_liab.xlsx` to confirm the workflow is functioning correctly.
+
+The Liability workflow is not yet fully validated, and I’ll share a further update once the end-to-end testing is complete.
+
+Best regards,  
+Mujtaba
