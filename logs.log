@@ -1,29 +1,55 @@
-2026-10-06 21:17:38,229 - lob.base - INFO - Prior month Folder Date is : 08-19-2026
-2026-10-06 21:17:38,261 - lob.base - INFO - --------------------Execution started for script: 1. Data Prep - WC WPC Data Prep.sas--------------------
-2026-10-06 22:02:46,147 - lob.base - INFO - SAS script 1 executed successfully
-2026-10-06 22:02:46,171 - lob.base - INFO - Output file generated: wc_wpc_for_scoring.sas7bdat and WC_WPC_for_scoring.csv
-2026-10-06 22:02:46,196 - lob.base - INFO - Execution Time: 45 min 7 sec
-2026-10-06 22:02:46,226 - lob.base - INFO - --------------------Execution ends: 1. Data Prep - WC WPC Data Prep.sas--------------------
-2026-10-06 22:02:46,266 - lob.base - INFO - --------------------Execution started for script: 2. WC WPC - Model Scoring Final.exe--------------------
-2026-10-06 22:02:46,309 - lob.base - INFO - Fetching Data - WC_WPC_for_scoring.csv
-2026-10-06 22:03:01,825 - lob.base - INFO - WC_WPC_for_scoring read success
-2026-10-06 22:03:01,990 - lob.base - INFO - Loading WCv21 from current location
-2026-10-06 22:03:02,257 - lob.base - INFO - Processing Data using Model
-2026-10-06 22:03:05,439 - lob.base - INFO - Fetching SHAP values
-2026-10-06 22:03:12,737 - lob.base - INFO - Exporting Output: model_shap.csv
-2026-10-06 22:13:27,038 - lob.base - INFO - Model executed successfully
-2026-10-06 22:13:27,069 - lob.base - INFO - Output file generated: model_shap.csv
-2026-10-06 22:13:27,125 - lob.base - INFO - Execution Time: 10 min 40 sec
-2026-10-06 22:13:27,151 - lob.base - INFO - --------------------Execution ends: 2. WC WPC - Model Scoring Final.exe--------------------
-2026-10-06 22:13:27,177 - lob.base - INFO - --------------------Execution started for script: 3. Import and Prep Python Output FINAL.sas--------------------
-2026-10-06 22:13:27,658 - lob.base - INFO - Input parameters to the script: {'FolderDt': '09-30-2026', 'Month': 9, 'Day': 30, 'Year': 2026, 'flag': 0, 'output_path_csv': '/ere/local/shared/actuarial/Share/Claims/WPC/Workers Comp/2026/09-30-2026'}
-2026-10-06 22:13:38,827 - lob.base - INFO - Execution Time: 0 min 11 sec
-2026-10-06 22:13:38,856 - lob.base - INFO - --------------------Execution ends: 3. Import and Prep Python Output FINAL.sas--------------------
-2026-10-06 22:13:38,882 - lob.base - INFO - --------------------Execution started for script: Create Next Month Folder--------------------
-2026-10-06 22:13:38,907 - lob.base - INFO - The next month folder date is: 10-28-2026
-2026-10-06 22:13:38,999 - lob.base - INFO - Year folder already exists
-2026-10-06 22:13:39,093 - lob.base - INFO - Next month folder created Successfully
-2026-10-06 22:13:39,117 - lob.base - INFO - Execution Time: 0 min 0 sec
-2026-10-06 22:13:39,143 - lob.base - INFO - --------------------Execution ends: Create Next Month Folder--------------------
-2026-10-06 22:13:39,177 - lob.base - INFO - All Scripts Executed
-2026-10-06 22:13:39,205 - lob.base - INFO - Complete Execution Time: 56 min 1 sec
+2026-10-13 12:30:35,825 - lob.base - INFO - Prior month Folder Date is : 08-19-2026
+2026-10-13 12:30:35,827 - lob.base - INFO - --------------------Execution started for script: 1. Data Prep - WC WPC Data Prep.sas--------------------
+2026-10-13 13:11:23,773 - lob.base - INFO - Execution Time: 40 min 47 sec
+2026-10-13 13:11:23,793 - lob.base - INFO - --------------------Execution ends: 1. Data Prep - WC WPC Data Prep.sas--------------------
+2026-10-13 13:11:23,796 - lob.base - INFO - --------------------Execution started for script: 2. WC WPC - Model Scoring Final.exe--------------------
+2026-10-13 13:11:23,798 - lob.base - INFO - Fetching Data - WC_WPC_for_scoring.csv
+2026-10-13 13:11:24,089 - lob.base - ERROR - Traceback (most recent call last):
+  File "a:\Share\Claims\WPC\TESTING 2\WPCv2\wpc-streamlining\utils.py", line 53, in inner
+    func(self, *args, **kwargs)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "a:\Share\Claims\WPC\TESTING 2\WPCv2\wpc-streamlining\lob\workers_comp.py", line 83, in step_2
+    df1 = pd.read_csv(data_path)  # reading data
+  File "C:\Users\XH787\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\parsers\readers.py", line 873, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "C:\Users\XH787\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\parsers\readers.py", line 300, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "C:\Users\XH787\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\parsers\readers.py", line 1645, in __init__
+    self._engine = self._make_engine(f, self.engine)
+                   ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\XH787\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\parsers\readers.py", line 1904, in _make_engine
+    self.handles = get_handle(
+                   ~~~~~~~~~~^
+        f,
+        ^^
+    ...<6 lines>...
+        storage_options=self.options.get("storage_options", None),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\XH787\AppData\Local\Python\pythoncore-3.14-64\Lib\site-packages\pandas\io\common.py", line 930, in get_handle
+    handle = open(
+        handle,
+    ...<3 lines>...
+        newline="",
+    )
+FileNotFoundError: [Errno 2] No such file or directory: 'A:/Share/Claims/WPC/TESTING 2/Workers Comp/2026/09-30-2026\\WC_WPC_for_scoring.csv'
+2026-10-13 13:17:49,795 - lob.base - ERROR - xxxxxxxxxx Error while executing script: 2. WC WPC - Model Scoring Final.exe xxxxxxxxxx
+2026-10-13 13:17:49,797 - lob.base - INFO - Execution Time: 6 min 26 sec
+2026-10-13 13:18:45,818 - lob.base - INFO - Prior month Folder Date is : 09-18-2026
+2026-10-13 13:18:45,833 - lob.base - INFO - --------------------Execution started for script: 1 Combine Hours and Counts Data.sas--------------------
+2026-10-13 13:18:46,926 - lob.base - INFO - Execution Time: 0 min 1 sec
+2026-10-13 13:18:46,927 - lob.base - INFO - --------------------Execution ends: 1 Combine Hours and Counts Data.sas--------------------
+2026-10-13 13:18:46,929 - lob.base - INFO - --------------------Execution started for script: 2 Model Score Code FINAL.sas--------------------
+2026-10-13 13:18:47,154 - lob.base - INFO - Reading sheet name: liabiltyWLHours from \\erieinsurance.com\local\Shared\Actuarial\Share\Claims\WPC\Adj Prod by Liability_Template.xlsx
+2026-10-13 13:18:57,563 - lob.base - INFO - Retrieved columns: Index(['REGION', 'RPT_ENTITY', 'SPVS_EMP_ID', 'SPVS_NM', 'JOB_TTL_FULL',
+       'JOB_TTL', 'USR_NTRL_ID', 'EMP_ID', 'EMP_NM', 'MaskEmpl', 'DISCIPLINE',
+       'DISC_SEC', 'WRK_CLASS', 'LEADER_NM', 'LEADER_EMP_ID', 'PRIM_ROL_NM',
+       'PayperiodEnd', 'EmpIDPPE', 'PayperiodEnd_dt', 'EmpIDPPE_dt',
+       'Total_Hours', 'TotalRegHrsPaid', 'TotalOTHrsPaid', 'TotalPTOHrsPaid',
+       'TotalOffSiteBus', 'StartDateinPosition', 'HireDate', 'OldClaims',
+       'OldBIExposures', 'NewInjuryExposures', 'OpenInjuryExposures',
+       'CompletedInjuryExposures', 'NewNonInjuryExposures',
+       'OpenNonInjuryExposures', 'CompletedNonInjuryExposures'],
+      dtype='str')
+2026-10-13 13:18:57,647 - lob.base - INFO - Input parameters to the script: {'FolderDt': '10-16-2026', 'Month': 10, 'Day': 16, 'Year': 2026, 'YearPr': 2026, 'FolderDtPrior': '09-18-2026', 'flag': 0, 'output_path_csv': '/ere/local/shared/actuarial/Share/Claims/WPC/TESTING 2/Liability/2026/10-16-2026', 'from_date': '01/10/2024', 'to_date': '09/30/2026'}

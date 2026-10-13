@@ -1,14 +1,14 @@
-6                                                          The SAS System                             21:17 Tuesday, October 6, 2026
+6                                                          The SAS System                            03:00 Tuesday, October 13, 2026
 
 15         
 16                         ods listing close;
 17                         ods html5 (id=saspy_internal) options(bitmap_mode='inline')
-18                             file="/saswork/SAS_work996B003DFA74_prdsasgridn12/SAS_work7892003DFA74_prdsasgridn12/saspy_results.ht
+18                             file="/saswork/SAS_work32D70005D1BF_prdsasgridn13/SAS_workE0B90005D1BF_prdsasgridn13/saspy_results.ht
 18       ! ml"
 19                             device=svg
 20                             style=HTMLBlue;
 NOTE: Writing HTML5(SASPY_INTERNAL) Body file: 
-      /saswork/SAS_work996B003DFA74_prdsasgridn12/SAS_work7892003DFA74_prdsasgridn12/saspy_results.html
+      /saswork/SAS_work32D70005D1BF_prdsasgridn13/SAS_workE0B90005D1BF_prdsasgridn13/saspy_results.html
 21                         ods graphics on / outputfmt=png;
 22                     ;*';*";*/;quit;run;
 22       ! /************************************************************************************************************************
@@ -77,20 +77,20 @@ NOTE: Table WORK.MM_ACCT created, with 284477 rows and 2 columns.
 
 74         QUIT;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           2.90 seconds
-      user cpu time       0.39 seconds
-      system cpu time     2.36 seconds
-      memory              110842.56k
+      real time           4.55 seconds
+      user cpu time       0.40 seconds
+      system cpu time     2.62 seconds
+      memory              110841.53k
       OS Memory           127896.00k
-      Timestamp           10/06/2026 09:17:43 PM
+      Timestamp           10/13/2026 03:00:41 AM
       Step Count                        2  Switch Count  2
-      Page Faults                       364
-      Page Reclaims                     28102
+      Page Faults                       375
+      Page Reclaims                     28095
       Page Swaps                        0
-      Voluntary Context Switches        688
-      Involuntary Context Switches      47
-      Block Input Operations            12631648
-      Block Output Operations           69672
+      Voluntary Context Switches        2712
+      Involuntary Context Switches      80
+      Block Input Operations            12631664
+      Block Output Operations           69680
       
 
 75         
@@ -446,25 +446,25 @@ NOTE: The data value for column MOD_DUTY_TYP_DC (MOD_DUTY_TYP_DC) was truncated 
       data from the DBMS.
 NOTE: The data value for column RTN_TO_WRK_DT (RTN_TO_WRK_DT) was truncated or was out of range 1 times when retrieving that data 
       from the DBMS.
-NOTE: Table WORK.CLM created, with 754996 rows and 687 columns.
+NOTE: Table WORK.CLM created, with 755609 rows and 687 columns.
 
 416        DISCONNECT FROM CCDS;
 417        Quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           9:43.44
-      user cpu time       19.95 seconds
-      system cpu time     12.51 seconds
-      memory              14830.37k
+      real time           7:31.05
+      user cpu time       19.92 seconds
+      system cpu time     12.57 seconds
+      memory              14642.93k
       OS Memory           33808.00k
-      Timestamp           10/06/2026 09:27:26 PM
+      Timestamp           10/13/2026 03:08:12 AM
       Step Count                        3  Switch Count  1
-      Page Faults                       38
-      Page Reclaims                     2744
+      Page Faults                       36
+      Page Reclaims                     2655
       Page Swaps                        0
-      Voluntary Context Switches        5817
-      Involuntary Context Switches      37
-      Block Input Operations            16
-      Block Output Operations           48320760
+      Voluntary Context Switches        6055
+      Involuntary Context Switches      36
+      Block Input Operations            48
+      Block Output Operations           48360152
       
 
 418        
@@ -474,24 +474,24 @@ NOTE: PROCEDURE SQL used (Total process time):
 421        	where gnrl_inj_typ_cd ne .;
 422        run;
 
-NOTE: There were 527743 observations read from the data set WORK.CLM.
+NOTE: There were 528005 observations read from the data set WORK.CLM.
       WHERE gnrl_inj_typ_cd not = .;
-NOTE: The data set WORK.CLM has 527743 observations and 687 variables.
+NOTE: The data set WORK.CLM has 528005 observations and 687 variables.
 NOTE: DATA statement used (Total process time):
-      real time           12.75 seconds
-      user cpu time       0.88 seconds
-      system cpu time     11.78 seconds
-      memory              3100.75k
+      real time           14.11 seconds
+      user cpu time       0.89 seconds
+      system cpu time     12.89 seconds
+      memory              3094.84k
       OS Memory           22180.00k
-      Timestamp           10/06/2026 09:27:39 PM
+      Timestamp           10/13/2026 03:08:26 AM
       Step Count                        4  Switch Count  1
-      Page Faults                       57
-      Page Reclaims                     271
+      Page Faults                       55
+      Page Reclaims                     308
       Page Swaps                        0
-      Voluntary Context Switches        791
-      Involuntary Context Switches      22
+      Voluntary Context Switches        959
+      Involuntary Context Switches      65
       Block Input Operations            0
-      Block Output Operations           33776152
+      Block Output Operations           33792536
       
 
 423        
@@ -532,25 +532,25 @@ NOTE: DATA statement used (Total process time):
 458            Order By
 459                C.CLM_NR
 460        );
-NOTE: Table WORK.BODY_PART created, with 771653 rows and 6 columns.
+NOTE: Table WORK.BODY_PART created, with 772306 rows and 6 columns.
 
 461        DISCONNECT FROM CCDS;
 462        Quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           2:26.99
+      real time           1:39.19
       user cpu time       0.32 seconds
-      system cpu time     0.19 seconds
-      memory              5350.71k
+      system cpu time     0.24 seconds
+      memory              5351.56k
       OS Memory           26272.00k
-      Timestamp           10/06/2026 09:30:06 PM
-      Step Count                        5  Switch Count  3033
+      Timestamp           10/13/2026 03:10:05 AM
+      Step Count                        5  Switch Count  3008
       Page Faults                       0
-      Page Reclaims                     299
+      Page Reclaims                     298
       Page Swaps                        0
-      Voluntary Context Switches        15815
-      Involuntary Context Switches      0
+      Voluntary Context Switches        16005
+      Involuntary Context Switches      1
       Block Input Operations            0
-      Block Output Operations           254080
+      Block Output Operations           254024
       
 
 463        
@@ -558,22 +558,22 @@ NOTE: PROCEDURE SQL used (Total process time):
 465        	where gnrl_inj_typ_cd ne .;
 466        run;
 
-NOTE: There were 544400 observations read from the data set WORK.BODY_PART.
+NOTE: There were 544702 observations read from the data set WORK.BODY_PART.
       WHERE gnrl_inj_typ_cd not = .;
-NOTE: The data set WORK.BODY_PART has 544400 observations and 6 variables.
+NOTE: The data set WORK.BODY_PART has 544702 observations and 6 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.10 seconds
-      user cpu time       0.03 seconds
+      real time           0.11 seconds
+      user cpu time       0.02 seconds
       system cpu time     0.07 seconds
-      memory              1322.65k
+      memory              1321.71k
       OS Memory           22180.00k
-      Timestamp           10/06/2026 09:30:06 PM
+      Timestamp           10/13/2026 03:10:05 AM
       Step Count                        6  Switch Count  1
-      Page Faults                       8
-      Page Reclaims                     212
+      Page Faults                       6
+      Page Reclaims                     215
       Page Swaps                        0
-      Voluntary Context Switches        10
-      Involuntary Context Switches      2
+      Voluntary Context Switches        12
+      Involuntary Context Switches      3
       Block Input Operations            0
       Block Output Operations           179216
       
@@ -583,24 +583,24 @@ NOTE: DATA statement used (Total process time):
 469        	create table body_part_count as
 470        	select distinct clm_nr, count(PRIM_BODY_PART_TYP_DC) as body_part_count from body_part
 471        	group by clm_nr;
-NOTE: Table WORK.BODY_PART_COUNT created, with 527743 rows and 2 columns.
+NOTE: Table WORK.BODY_PART_COUNT created, with 528005 rows and 2 columns.
 
 472        quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           0.15 seconds
-      user cpu time       0.13 seconds
-      system cpu time     0.09 seconds
-      memory              83058.64k
+      real time           0.17 seconds
+      user cpu time       0.12 seconds
+      system cpu time     0.07 seconds
+      memory              83059.01k
       OS Memory           102296.00k
-      Timestamp           10/06/2026 09:30:06 PM
+      Timestamp           10/13/2026 03:10:05 AM
       Step Count                        7  Switch Count  2
-      Page Faults                       77
-      Page Reclaims                     14174
+      Page Faults                       66
+      Page Reclaims                     13335
       Page Swaps                        0
-      Voluntary Context Switches        2188
-      Involuntary Context Switches      3
+      Voluntary Context Switches        1488
+      Involuntary Context Switches      11
       Block Input Operations            0
-      Block Output Operations           49688
+      Block Output Operations           49680
       
 
 473        
@@ -614,24 +614,24 @@ NOTE: PROCEDURE SQL used (Total process time):
 481        	select a.*, b.body_part_count
 482        	from body_part as a left join body_part_count as b
 483        	on a.clm_nr = b.clm_nr;
-NOTE: Table WORK.BODY_PART_COUNT1 created, with 544400 rows and 7 columns.
+NOTE: Table WORK.BODY_PART_COUNT1 created, with 544702 rows and 7 columns.
 
 484        quit;
 NOTE: PROCEDURE SQL used (Total process time):
       real time           0.31 seconds
       user cpu time       0.20 seconds
-      system cpu time     0.20 seconds
-      memory              125419.28k
+      system cpu time     0.19 seconds
+      memory              125417.62k
       OS Memory           144420.00k
-      Timestamp           10/06/2026 09:30:06 PM
+      Timestamp           10/13/2026 03:10:06 AM
       Step Count                        8  Switch Count  2
-      Page Faults                       197
-      Page Reclaims                     13281
+      Page Faults                       183
+      Page Reclaims                     12811
       Page Swaps                        0
-      Voluntary Context Switches        2597
-      Involuntary Context Switches      5
+      Voluntary Context Switches        2405
+      Involuntary Context Switches      14
       Block Input Operations            0
-      Block Output Operations           375344
+      Block Output Operations           375856
       
 
 485        
@@ -641,23 +641,23 @@ NOTE: PROCEDURE SQL used (Total process time):
 489        			else PRIM_BODY_PART = PRIM_BODY_PART_TYP_DC;
 490        run;
 
-NOTE: There were 544400 observations read from the data set WORK.BODY_PART_COUNT1.
-NOTE: The data set WORK.BODY_PART_COUNT2 has 544400 observations and 8 variables.
+NOTE: There were 544702 observations read from the data set WORK.BODY_PART_COUNT1.
+NOTE: The data set WORK.BODY_PART_COUNT2 has 544702 observations and 8 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.08 seconds
-      user cpu time       0.01 seconds
+      real time           0.09 seconds
+      user cpu time       0.02 seconds
       system cpu time     0.07 seconds
-      memory              1319.43k
+      memory              1315.40k
       OS Memory           22180.00k
-      Timestamp           10/06/2026 09:30:06 PM
+      Timestamp           10/13/2026 03:10:06 AM
       Step Count                        9  Switch Count  1
-      Page Faults                       9
-      Page Reclaims                     222
+      Page Faults                       10
+      Page Reclaims                     217
       Page Swaps                        0
-      Voluntary Context Switches        15
-      Involuntary Context Switches      1
+      Voluntary Context Switches        17
+      Involuntary Context Switches      0
       Block Input Operations            0
-      Block Output Operations           204832
+      Block Output Operations           204824
       
 
 491        
@@ -665,24 +665,24 @@ NOTE: DATA statement used (Total process time):
 493        	create table body_part_count3 as
 494        	select distinct clm_nr, PRIM_BODY_PART
 495        	from body_part_count2;
-NOTE: Table WORK.BODY_PART_COUNT3 created, with 527746 rows and 2 columns.
+NOTE: Table WORK.BODY_PART_COUNT3 created, with 528008 rows and 2 columns.
 
 496        quit;
 NOTE: PROCEDURE SQL used (Total process time):
       real time           0.16 seconds
-      user cpu time       0.13 seconds
-      system cpu time     0.14 seconds
-      memory              77501.98k
+      user cpu time       0.11 seconds
+      system cpu time     0.13 seconds
+      memory              77504.23k
       OS Memory           96656.00k
-      Timestamp           10/06/2026 09:30:07 PM
+      Timestamp           10/13/2026 03:10:06 AM
       Step Count                        10  Switch Count  2
       Page Faults                       173
-      Page Reclaims                     18673
+      Page Reclaims                     18689
       Page Swaps                        0
-      Voluntary Context Switches        1769
-      Involuntary Context Switches      14
+      Voluntary Context Switches        1100
+      Involuntary Context Switches      18
       Block Input Operations            0
-      Block Output Operations           167024
+      Block Output Operations           167128
       
 
 497        
@@ -693,24 +693,24 @@ NOTE: PROCEDURE SQL used (Total process time):
 502        	on a.clm_nr = b.clm_nr;
 WARNING: This CREATE TABLE statement recursively references the target table. A consequence of this is a possible data integrity 
          problem.
-NOTE: Table WORK.CLM created, with 527746 rows and 688 columns.
+NOTE: Table WORK.CLM created, with 528008 rows and 688 columns.
 
 503        quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           40.58 seconds
-      user cpu time       16.01 seconds
-      system cpu time     37.70 seconds
-      memory              1055873.81k
+      real time           43.52 seconds
+      user cpu time       16.02 seconds
+      system cpu time     38.74 seconds
+      memory              1055868.21k
       OS Memory           1074376.00k
-      Timestamp           10/06/2026 09:30:47 PM
+      Timestamp           10/13/2026 03:10:49 AM
       Step Count                        11  Switch Count  2
-      Page Faults                       53
-      Page Reclaims                     184197
+      Page Faults                       100
+      Page Reclaims                     183692
       Page Swaps                        0
-      Voluntary Context Switches        578670
-      Involuntary Context Switches      209
+      Voluntary Context Switches        529399
+      Involuntary Context Switches      382
       Block Input Operations            0
-      Block Output Operations           101328472
+      Block Output Operations           101378128
       
 
 504        
@@ -743,27 +743,27 @@ NOTE: PROCEDURE SQL used (Total process time):
 531            Order By
 532                C.CLM_NR
 533        );
-NOTE: The data value for column NOTE_DC (NOTE_DC) was truncated or was out of range 690193 times when retrieving that data from the 
+NOTE: The data value for column NOTE_DC (NOTE_DC) was truncated or was out of range 690785 times when retrieving that data from the 
       DBMS.
-NOTE: Table WORK.NOTES_TEST created, with 19528127 rows and 5 columns.
+NOTE: Table WORK.NOTES_TEST created, with 19538253 rows and 5 columns.
 
 534        DISCONNECT FROM CCDS;
 535        Quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           6:56.34
-      user cpu time       20.37 seconds
-      system cpu time     18.07 seconds
-      memory              5349.62k
+      real time           7:53.09
+      user cpu time       19.20 seconds
+      system cpu time     15.37 seconds
+      memory              5350.12k
       OS Memory           26784.00k
-      Timestamp           10/06/2026 09:37:43 PM
+      Timestamp           10/13/2026 03:18:42 AM
       Step Count                        12  Switch Count  1
       Page Faults                       0
-      Page Reclaims                     192
+      Page Reclaims                     190
       Page Swaps                        0
-      Voluntary Context Switches        343674
-      Involuntary Context Switches      13
+      Voluntary Context Switches        330380
+      Involuntary Context Switches      26
       Block Input Operations            0
-      Block Output Operations           43472032
+      Block Output Operations           43494576
       
 
 536        
@@ -772,24 +772,24 @@ NOTE: PROCEDURE SQL used (Total process time):
 539        	select clm_nr, count(NOTE_DC) as note_count
 540        	from notes_test
 541        	group by clm_nr;
-NOTE: Table WORK.NOTE_COUNT created, with 532121 rows and 2 columns.
+NOTE: Table WORK.NOTE_COUNT created, with 532383 rows and 2 columns.
 
 542        quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           26.21 seconds
-      user cpu time       21.37 seconds
-      system cpu time     20.74 seconds
-      memory              1051980.48k
+      real time           20.79 seconds
+      user cpu time       15.39 seconds
+      system cpu time     17.87 seconds
+      memory              1051980.67k
       OS Memory           1071788.00k
-      Timestamp           10/06/2026 09:38:10 PM
+      Timestamp           10/13/2026 03:19:03 AM
       Step Count                        13  Switch Count  2
-      Page Faults                       167
-      Page Reclaims                     15495
+      Page Faults                       168
+      Page Reclaims                     76382
       Page Swaps                        0
-      Voluntary Context Switches        765005
-      Involuntary Context Switches      404
+      Voluntary Context Switches        737879
+      Involuntary Context Switches      486
       Block Input Operations            0
-      Block Output Operations           40694568
+      Block Output Operations           40715544
       
 
 543        
@@ -817,25 +817,25 @@ NOTE: PROCEDURE SQL used (Total process time):
 565                C.CLM_NR
 566        );
 NOTE: The data value for column DOC_DC (DOC_DC) was truncated or was out of range 1 times when retrieving that data from the DBMS.
-NOTE: Table WORK.DOC_TEST created, with 14588621 rows and 5 columns.
+NOTE: Table WORK.DOC_TEST created, with 14565086 rows and 5 columns.
 
 567        DISCONNECT FROM CCDS;
 568        Quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           6:33.96
-      user cpu time       5.90 seconds
-      system cpu time     3.77 seconds
-      memory              5349.78k
+      real time           6:08.53
+      user cpu time       5.71 seconds
+      system cpu time     3.53 seconds
+      memory              5349.93k
       OS Memory           27040.00k
-      Timestamp           10/06/2026 09:44:44 PM
+      Timestamp           10/13/2026 03:25:12 AM
       Step Count                        14  Switch Count  1
       Page Faults                       0
-      Page Reclaims                     107
+      Page Reclaims                     105
       Page Swaps                        0
-      Voluntary Context Switches        80869
-      Involuntary Context Switches      2
-      Block Input Operations            8
-      Block Output Operations           10505872
+      Voluntary Context Switches        82418
+      Involuntary Context Switches      5
+      Block Input Operations            0
+      Block Output Operations           10488976
       
 
 569        
@@ -844,24 +844,24 @@ NOTE: PROCEDURE SQL used (Total process time):
 572        	select clm_nr, count(doc_DC) as doc_count
 573        	from doc_test
 574        	group by clm_nr;
-NOTE: Table WORK.DOC_COUNT created, with 532170 rows and 2 columns.
+NOTE: Table WORK.DOC_COUNT created, with 532383 rows and 2 columns.
 
 575        quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           7.15 seconds
-      user cpu time       8.63 seconds
-      system cpu time     5.36 seconds
-      memory              1050211.70k
-      OS Memory           1069716.00k
-      Timestamp           10/06/2026 09:44:51 PM
+      real time           7.10 seconds
+      user cpu time       7.28 seconds
+      system cpu time     4.68 seconds
+      memory              1050211.42k
+      OS Memory           1069972.00k
+      Timestamp           10/13/2026 03:25:19 AM
       Step Count                        15  Switch Count  2
-      Page Faults                       170
-      Page Reclaims                     104727
+      Page Faults                       172
+      Page Reclaims                     200954
       Page Swaps                        0
-      Voluntary Context Switches        187797
-      Involuntary Context Switches      286
+      Voluntary Context Switches        155588
+      Involuntary Context Switches      480
       Block Input Operations            0
-      Block Output Operations           8462616
+      Block Output Operations           8449056
       
 
 576        
@@ -915,25 +915,25 @@ NOTE: PROCEDURE SQL used (Total process time):
 NOTE: The data value for column ACT_SUBJ_DC (ACT_SUBJ_DC) was truncated or was out of range 98 times when retrieving that data from 
       the DBMS.
 NOTE: The data value for column ACT_DC (ACT_DC) was truncated or was out of range 8 times when retrieving that data from the DBMS.
-NOTE: Table WORK.ACT created, with 7303890 rows and 21 columns.
+NOTE: Table WORK.ACT created, with 7315104 rows and 21 columns.
 
 622        DISCONNECT FROM CCDS;
 623        Quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           10:00.15
-      user cpu time       14.08 seconds
-      system cpu time     13.36 seconds
-      memory              5418.31k
-      OS Memory           26784.00k
-      Timestamp           10/06/2026 09:54:51 PM
+      real time           7:06.32
+      user cpu time       14.78 seconds
+      system cpu time     17.27 seconds
+      memory              5418.50k
+      OS Memory           27040.00k
+      Timestamp           10/13/2026 03:32:25 AM
       Step Count                        16  Switch Count  1
-      Page Faults                       0
-      Page Reclaims                     369
+      Page Faults                       3
+      Page Reclaims                     367
       Page Swaps                        0
-      Voluntary Context Switches        58141
-      Involuntary Context Switches      8
-      Block Input Operations            80
-      Block Output Operations           53423832
+      Voluntary Context Switches        54478
+      Involuntary Context Switches      29
+      Block Input Operations            0
+      Block Output Operations           53505704
       
 
 624        
@@ -943,24 +943,24 @@ NOTE: PROCEDURE SQL used (Total process time):
 628        	where Asgn_To_Ttl in('Workers Comp Specialist' 'Workers Comp Adjuster II' 'Sr Workers Comp Adjuster');
 629        run;
 
-NOTE: There were 4492792 observations read from the data set WORK.ACT.
+NOTE: There were 4500405 observations read from the data set WORK.ACT.
       WHERE Asgn_To_Ttl in ('Sr Workers Comp Adjuster', 'Workers Comp Adjuster II', 'Workers Comp Specialist');
-NOTE: The data set WORK.ACT1 has 4492792 observations and 21 variables.
+NOTE: The data set WORK.ACT1 has 4500405 observations and 21 variables.
 NOTE: DATA statement used (Total process time):
-      real time           12.74 seconds
-      user cpu time       0.82 seconds
-      system cpu time     11.80 seconds
-      memory              1359.25k
-      OS Memory           22692.00k
-      Timestamp           10/06/2026 09:55:04 PM
+      real time           16.17 seconds
+      user cpu time       0.96 seconds
+      system cpu time     14.97 seconds
+      memory              1378.06k
+      OS Memory           22948.00k
+      Timestamp           10/13/2026 03:32:41 AM
       Step Count                        17  Switch Count  1
-      Page Faults                       8
-      Page Reclaims                     224
+      Page Faults                       10
+      Page Reclaims                     230
       Page Swaps                        0
-      Voluntary Context Switches        877
-      Involuntary Context Switches      34
-      Block Input Operations            0
-      Block Output Operations           32861720
+      Voluntary Context Switches        789
+      Involuntary Context Switches      41
+      Block Input Operations            96
+      Block Output Operations           32917536
       
 
 630        
@@ -969,24 +969,24 @@ NOTE: DATA statement used (Total process time):
 633        	select clm_nr, count(act_subj_dc) as act_count
 634        	from act1
 635        	group by clm_nr;
-NOTE: Table WORK.ACT_COUNT created, with 168384 rows and 2 columns.
+NOTE: Table WORK.ACT_COUNT created, with 168647 rows and 2 columns.
 
 636        quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           5.36 seconds
-      user cpu time       2.44 seconds
-      system cpu time     4.84 seconds
-      memory              1050216.85k
-      OS Memory           1069716.00k
-      Timestamp           10/06/2026 09:55:09 PM
+      real time           6.51 seconds
+      user cpu time       2.46 seconds
+      system cpu time     5.84 seconds
+      memory              1050217.07k
+      OS Memory           1069972.00k
+      Timestamp           10/13/2026 03:32:48 AM
       Step Count                        18  Switch Count  2
-      Page Faults                       178
-      Page Reclaims                     94509
+      Page Faults                       187
+      Page Reclaims                     304961
       Page Swaps                        0
-      Voluntary Context Switches        59712
-      Involuntary Context Switches      112
+      Voluntary Context Switches        50538
+      Involuntary Context Switches      232
       Block Input Operations            0
-      Block Output Operations           2606616
+      Block Output Operations           2610968
       
 
 637        
@@ -994,23 +994,23 @@ NOTE: PROCEDURE SQL used (Total process time):
 639        	by descending act_count;
 640        run;
 
-NOTE: There were 168384 observations read from the data set WORK.ACT_COUNT.
-NOTE: The data set WORK.ACT_COUNT has 168384 observations and 2 variables.
+NOTE: There were 168647 observations read from the data set WORK.ACT_COUNT.
+NOTE: The data set WORK.ACT_COUNT has 168647 observations and 2 variables.
 NOTE: PROCEDURE SORT used (Total process time):
-      real time           0.07 seconds
-      user cpu time       0.03 seconds
-      system cpu time     0.02 seconds
-      memory              14760.21k
-      OS Memory           36072.00k
-      Timestamp           10/06/2026 09:55:09 PM
+      real time           0.06 seconds
+      user cpu time       0.04 seconds
+      system cpu time     0.01 seconds
+      memory              14755.46k
+      OS Memory           36328.00k
+      Timestamp           10/13/2026 03:32:48 AM
       Step Count                        19  Switch Count  1
-      Page Faults                       7
-      Page Reclaims                     3172
+      Page Faults                       18
+      Page Reclaims                     3164
       Page Swaps                        0
-      Voluntary Context Switches        18
-      Involuntary Context Switches      0
-      Block Input Operations            208
-      Block Output Operations           15896
+      Voluntary Context Switches        5
+      Involuntary Context Switches      5
+      Block Input Operations            0
+      Block Output Operations           15888
       
 
 641        
@@ -1056,25 +1056,25 @@ NOTE: PROCEDURE SORT used (Total process time):
 675                   ,C.CLM_NR
 676        		   ,C.JURIS_STATE_DC
 677        );
-NOTE: Table WORK.TOUCHES_COUNT created, with 190919 rows and 10 columns.
+NOTE: Table WORK.TOUCHES_COUNT created, with 191119 rows and 10 columns.
 
 678        DISCONNECT FROM CCDS;
 679        quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           3:30.30
-      user cpu time       0.12 seconds
-      system cpu time     0.06 seconds
-      memory              5364.09k
-      OS Memory           26784.00k
-      Timestamp           10/06/2026 09:58:39 PM
-      Step Count                        20  Switch Count  763
-      Page Faults                       0
-      Page Reclaims                     127
+      real time           3:25.14
+      user cpu time       0.13 seconds
+      system cpu time     0.07 seconds
+      memory              5365.06k
+      OS Memory           27040.00k
+      Timestamp           10/13/2026 03:36:13 AM
+      Step Count                        20  Switch Count  573
+      Page Faults                       1
+      Page Reclaims                     128
       Page Swaps                        0
-      Voluntary Context Switches        3975
-      Involuntary Context Switches      0
+      Voluntary Context Switches        3195
+      Involuntary Context Switches      2
       Block Input Operations            0
-      Block Output Operations           59992
+      Block Output Operations           60000
       
 
 680        
@@ -1085,24 +1085,24 @@ NOTE: PROCEDURE SQL used (Total process time):
 685        	select a.*, b.act_count
 686        	from clm as a left join act_count as b
 687        	on a.clm_nr = b.clm_nr;
-NOTE: Table WORK.CLM_SUM created, with 527746 rows and 689 columns.
+NOTE: Table WORK.CLM_SUM created, with 528008 rows and 689 columns.
 
 688        quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           12.21 seconds
-      user cpu time       1.72 seconds
-      system cpu time     10.38 seconds
-      memory              26540.87k
+      real time           20.64 seconds
+      user cpu time       1.95 seconds
+      system cpu time     16.56 seconds
+      memory              26541.03k
       OS Memory           44844.00k
-      Timestamp           10/06/2026 09:58:52 PM
+      Timestamp           10/13/2026 03:36:34 AM
       Step Count                        21  Switch Count  2
-      Page Faults                       105
-      Page Reclaims                     5463
+      Page Faults                       52
+      Page Reclaims                     4451
       Page Swaps                        0
-      Voluntary Context Switches        1173
-      Involuntary Context Switches      19
-      Block Input Operations            0
-      Block Output Operations           33792560
+      Voluntary Context Switches        645
+      Involuntary Context Switches      146
+      Block Input Operations            33408936
+      Block Output Operations           33809464
       
 
 689        
@@ -1111,23 +1111,23 @@ NOTE: PROCEDURE SQL used (Total process time):
 692        		else act_count = act_count;
 693        run;
 
-NOTE: There were 527746 observations read from the data set WORK.CLM_SUM.
-NOTE: The data set WORK.CLM_SUM has 527746 observations and 689 variables.
+NOTE: There were 528008 observations read from the data set WORK.CLM_SUM.
+NOTE: The data set WORK.CLM_SUM has 528008 observations and 689 variables.
 NOTE: DATA statement used (Total process time):
-      real time           10.97 seconds
-      user cpu time       0.75 seconds
-      system cpu time     10.11 seconds
-      memory              3109.53k
-      OS Memory           22436.00k
-      Timestamp           10/06/2026 09:59:03 PM
+      real time           13.87 seconds
+      user cpu time       0.82 seconds
+      system cpu time     12.61 seconds
+      memory              3116.56k
+      OS Memory           22692.00k
+      Timestamp           10/13/2026 03:36:48 AM
       Step Count                        22  Switch Count  1
       Page Faults                       8
-      Page Reclaims                     238
+      Page Reclaims                     221
       Page Swaps                        0
-      Voluntary Context Switches        749
-      Involuntary Context Switches      14
+      Voluntary Context Switches        32
+      Involuntary Context Switches      128
       Block Input Operations            0
-      Block Output Operations           33776152
+      Block Output Operations           33793056
       
 
 694        
@@ -1136,24 +1136,24 @@ NOTE: DATA statement used (Total process time):
 697        	select a.*, b.note_count
 698        	from clm_sum as a left join note_count as b
 699        	on a.clm_nr = b.clm_nr;
-NOTE: Table WORK.CLM_SUM1 created, with 527746 rows and 690 columns.
+NOTE: Table WORK.CLM_SUM1 created, with 528008 rows and 690 columns.
 
 700        quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           39.10 seconds
-      user cpu time       15.59 seconds
-      system cpu time     34.99 seconds
-      memory              1059447.40k
+      real time           50.97 seconds
+      user cpu time       17.50 seconds
+      system cpu time     44.89 seconds
+      memory              1059423.65k
       OS Memory           1077972.00k
-      Timestamp           10/06/2026 09:59:42 PM
+      Timestamp           10/13/2026 03:37:39 AM
       Step Count                        23  Switch Count  2
-      Page Faults                       95
-      Page Reclaims                     154884
+      Page Faults                       55
+      Page Reclaims                     379729
       Page Swaps                        0
-      Voluntary Context Switches        577767
-      Involuntary Context Switches      294
-      Block Input Operations            0
-      Block Output Operations           101328720
+      Voluntary Context Switches        524244
+      Involuntary Context Switches      1718
+      Block Input Operations            50072
+      Block Output Operations           101378648
       
 
 701        
@@ -1162,23 +1162,23 @@ NOTE: PROCEDURE SQL used (Total process time):
 704        		else note_count = note_count;
 705        run;
 
-NOTE: There were 527746 observations read from the data set WORK.CLM_SUM1.
-NOTE: The data set WORK.CLM_SUM1 has 527746 observations and 690 variables.
+NOTE: There were 528008 observations read from the data set WORK.CLM_SUM1.
+NOTE: The data set WORK.CLM_SUM1 has 528008 observations and 690 variables.
 NOTE: DATA statement used (Total process time):
-      real time           10.78 seconds
-      user cpu time       0.82 seconds
-      system cpu time     9.86 seconds
-      memory              3109.81k
-      OS Memory           22436.00k
-      Timestamp           10/06/2026 09:59:53 PM
+      real time           14.73 seconds
+      user cpu time       0.84 seconds
+      system cpu time     13.51 seconds
+      memory              3109.71k
+      OS Memory           22692.00k
+      Timestamp           10/13/2026 03:37:53 AM
       Step Count                        24  Switch Count  1
       Page Faults                       8
-      Page Reclaims                     220
+      Page Reclaims                     213
       Page Swaps                        0
-      Voluntary Context Switches        784
-      Involuntary Context Switches      21
+      Voluntary Context Switches        251
+      Involuntary Context Switches      84
       Block Input Operations            0
-      Block Output Operations           33776160
+      Block Output Operations           33793048
       
 
 706        
@@ -1187,24 +1187,24 @@ NOTE: DATA statement used (Total process time):
 709        	select a.*, b.doc_count
 710        	from clm_sum1 as a left join doc_count as b
 711        	on a.clm_nr = b.clm_nr;
-NOTE: Table WORK.CLM_SUM2 created, with 527746 rows and 691 columns.
+NOTE: Table WORK.CLM_SUM2 created, with 528008 rows and 691 columns.
 
 712        quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           40.61 seconds
-      user cpu time       16.03 seconds
-      system cpu time     35.50 seconds
-      memory              1055884.75k
+      real time           56.59 seconds
+      user cpu time       18.31 seconds
+      system cpu time     45.73 seconds
+      memory              1055883.53k
       OS Memory           1074380.00k
-      Timestamp           10/06/2026 10:00:33 PM
+      Timestamp           10/13/2026 03:38:50 AM
       Step Count                        25  Switch Count  2
-      Page Faults                       57
-      Page Reclaims                     183827
+      Page Faults                       47
+      Page Reclaims                     435205
       Page Swaps                        0
-      Voluntary Context Switches        573540
-      Involuntary Context Switches      274
-      Block Input Operations            0
-      Block Output Operations           101328720
+      Voluntary Context Switches        505028
+      Involuntary Context Switches      2361
+      Block Input Operations            50192
+      Block Output Operations           101378640
       
 
 713        
@@ -1213,23 +1213,23 @@ NOTE: PROCEDURE SQL used (Total process time):
 716        		else doc_count = doc_count;
 717        run;
 
-NOTE: There were 527746 observations read from the data set WORK.CLM_SUM2.
-NOTE: The data set WORK.CLM_SUM2 has 527746 observations and 691 variables.
+NOTE: There were 528008 observations read from the data set WORK.CLM_SUM2.
+NOTE: The data set WORK.CLM_SUM2 has 528008 observations and 691 variables.
 NOTE: DATA statement used (Total process time):
-      real time           10.83 seconds
-      user cpu time       0.77 seconds
-      system cpu time     9.86 seconds
-      memory              3112.93k
-      OS Memory           22436.00k
-      Timestamp           10/06/2026 10:00:44 PM
+      real time           14.54 seconds
+      user cpu time       0.79 seconds
+      system cpu time     13.19 seconds
+      memory              3110.06k
+      OS Memory           22692.00k
+      Timestamp           10/13/2026 03:39:05 AM
       Step Count                        26  Switch Count  1
-      Page Faults                       6
-      Page Reclaims                     222
+      Page Faults                       8
+      Page Reclaims                     213
       Page Swaps                        0
-      Voluntary Context Switches        720
-      Involuntary Context Switches      13
+      Voluntary Context Switches        470
+      Involuntary Context Switches      48
       Block Input Operations            0
-      Block Output Operations           33776160
+      Block Output Operations           33793048
       
 
 718        
@@ -1238,24 +1238,24 @@ NOTE: DATA statement used (Total process time):
 721        	select a.*, b.total_touches, b.views, b.asgn, b.closes, b.custom_evnts, b.delays, b.all_other
 722        	from clm_sum2 as a left join touches_count as b
 723        	on a.clm_nr = b.clm_nr;
-NOTE: Table WORK.CLM_SUM3 created, with 527752 rows and 698 columns.
+NOTE: Table WORK.CLM_SUM3 created, with 528008 rows and 698 columns.
 
 724        quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           39.26 seconds
-      user cpu time       15.69 seconds
-      system cpu time     35.60 seconds
-      memory              1055909.62k
+      real time           52.94 seconds
+      user cpu time       17.47 seconds
+      system cpu time     43.94 seconds
+      memory              1055903.81k
       OS Memory           1074384.00k
-      Timestamp           10/06/2026 10:01:23 PM
+      Timestamp           10/13/2026 03:39:58 AM
       Step Count                        27  Switch Count  2
-      Page Faults                       124
-      Page Reclaims                     188767
+      Page Faults                       95
+      Page Reclaims                     498842
       Page Swaps                        0
-      Voluntary Context Switches        589282
-      Involuntary Context Switches      271
-      Block Input Operations            0
-      Block Output Operations           101365072
+      Voluntary Context Switches        428818
+      Involuntary Context Switches      2719
+      Block Input Operations            59424
+      Block Output Operations           101414472
       
 
 725        
@@ -1263,23 +1263,23 @@ NOTE: PROCEDURE SQL used (Total process time):
 727        	if total_touches eq . then delete;
 728        run;
 
-NOTE: There were 527752 observations read from the data set WORK.CLM_SUM3.
-NOTE: The data set WORK.CLM_SUM3 has 190881 observations and 698 variables.
+NOTE: There were 528008 observations read from the data set WORK.CLM_SUM3.
+NOTE: The data set WORK.CLM_SUM3 has 191120 observations and 698 variables.
 NOTE: DATA statement used (Total process time):
-      real time           6.69 seconds
-      user cpu time       0.57 seconds
-      system cpu time     6.08 seconds
-      memory              3119.09k
+      real time           7.63 seconds
+      user cpu time       0.58 seconds
+      system cpu time     6.87 seconds
+      memory              3118.34k
       OS Memory           22692.00k
-      Timestamp           10/06/2026 10:01:30 PM
+      Timestamp           10/13/2026 03:40:05 AM
       Step Count                        28  Switch Count  1
-      Page Faults                       7
-      Page Reclaims                     218
+      Page Faults                       8
+      Page Reclaims                     214
       Page Swaps                        0
-      Voluntary Context Switches        274
-      Involuntary Context Switches      26
-      Block Input Operations            0
-      Block Output Operations           12216856
+      Voluntary Context Switches        192
+      Involuntary Context Switches      45
+      Block Input Operations            8
+      Block Output Operations           12232224
       
 
 729        
@@ -1293,23 +1293,23 @@ NOTE: DATA statement used (Total process time):
 737        	num_stuff = act_count + note_count + doc_count;
 738        run;
 
-NOTE: There were 190881 observations read from the data set WORK.CLM_SUM3.
-NOTE: The data set WORK.NUM_TOUCH has 190881 observations and 699 variables.
+NOTE: There were 191120 observations read from the data set WORK.CLM_SUM3.
+NOTE: The data set WORK.NUM_TOUCH has 191120 observations and 699 variables.
 NOTE: DATA statement used (Total process time):
-      real time           4.04 seconds
-      user cpu time       0.31 seconds
-      system cpu time     3.68 seconds
-      memory              3117.50k
+      real time           5.11 seconds
+      user cpu time       0.30 seconds
+      system cpu time     4.73 seconds
+      memory              3117.84k
       OS Memory           22692.00k
-      Timestamp           10/06/2026 10:01:34 PM
+      Timestamp           10/13/2026 03:40:10 AM
       Step Count                        29  Switch Count  1
-      Page Faults                       6
-      Page Reclaims                     219
+      Page Faults                       8
+      Page Reclaims                     221
       Page Swaps                        0
-      Voluntary Context Switches        263
-      Involuntary Context Switches      26
+      Voluntary Context Switches        84
+      Involuntary Context Switches      47
       Block Input Operations            8
-      Block Output Operations           12216872
+      Block Output Operations           12232216
       
 
 739        
@@ -1317,23 +1317,23 @@ NOTE: DATA statement used (Total process time):
 741        	by descending total_touches;
 742        run;
 
-NOTE: There were 190881 observations read from the data set WORK.NUM_TOUCH.
-NOTE: The data set WORK.NUM_TOUCH has 190881 observations and 699 variables.
+NOTE: There were 191120 observations read from the data set WORK.NUM_TOUCH.
+NOTE: The data set WORK.NUM_TOUCH has 191120 observations and 699 variables.
 NOTE: PROCEDURE SORT used (Total process time):
-      real time           10.58 seconds
-      user cpu time       2.19 seconds
-      system cpu time     8.27 seconds
-      memory              1056715.84k
+      real time           12.64 seconds
+      user cpu time       2.36 seconds
+      system cpu time     9.82 seconds
+      memory              1056701.62k
       OS Memory           1076748.00k
-      Timestamp           10/06/2026 10:01:45 PM
+      Timestamp           10/13/2026 03:40:23 AM
       Step Count                        30  Switch Count  1
       Page Faults                       1
-      Page Reclaims                     247450
+      Page Reclaims                     247453
       Page Swaps                        0
-      Voluntary Context Switches        530
-      Involuntary Context Switches      25
-      Block Input Operations            8
-      Block Output Operations           24434232
+      Voluntary Context Switches        507
+      Involuntary Context Switches      203
+      Block Input Operations            32
+      Block Output Operations           24464432
       
 
 743        
@@ -1344,24 +1344,24 @@ NOTE: PROCEDURE SORT used (Total process time):
 748        	select a.*, b.Attribute_Name, b.Attribute_Description
 749        	from num_touch as a left join mm_acct as b
 750        	on a.pol_nr = b.Attribute_Name;
-NOTE: Table WORK.NUM_TOUCH1 created, with 190881 rows and 701 columns.
+NOTE: Table WORK.NUM_TOUCH1 created, with 191120 rows and 701 columns.
 
 751        quit;
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           13.97 seconds
-      user cpu time       5.32 seconds
-      system cpu time     13.23 seconds
-      memory              1055295.57k
+      real time           19.32 seconds
+      user cpu time       7.01 seconds
+      system cpu time     16.90 seconds
+      memory              1055286.26k
       OS Memory           1073456.00k
-      Timestamp           10/06/2026 10:01:59 PM
+      Timestamp           10/13/2026 03:40:42 AM
       Step Count                        31  Switch Count  2
-      Page Faults                       49
-      Page Reclaims                     183148
+      Page Faults                       48
+      Page Reclaims                     515838
       Page Swaps                        0
-      Voluntary Context Switches        213080
-      Involuntary Context Switches      76
-      Block Input Operations            0
-      Block Output Operations           36650304
+      Voluntary Context Switches        184774
+      Involuntary Context Switches      778
+      Block Input Operations            6672
+      Block Output Operations           36696128
       
 
 752        
@@ -1371,23 +1371,23 @@ NOTE: PROCEDURE SQL used (Total process time):
 756        	else MM_indic = "N";
 757        run;
 
-NOTE: There were 190881 observations read from the data set WORK.NUM_TOUCH1.
-NOTE: The data set WORK.NUM_TOUCH2 has 190881 observations and 702 variables.
+NOTE: There were 191120 observations read from the data set WORK.NUM_TOUCH1.
+NOTE: The data set WORK.NUM_TOUCH2 has 191120 observations and 702 variables.
 NOTE: DATA statement used (Total process time):
-      real time           4.10 seconds
+      real time           4.92 seconds
       user cpu time       0.32 seconds
-      system cpu time     3.75 seconds
-      memory              3118.15k
-      OS Memory           22436.00k
-      Timestamp           10/06/2026 10:02:03 PM
+      system cpu time     4.41 seconds
+      memory              3117.31k
+      OS Memory           22692.00k
+      Timestamp           10/13/2026 03:40:47 AM
       Step Count                        32  Switch Count  1
-      Page Faults                       6
-      Page Reclaims                     217
+      Page Faults                       8
+      Page Reclaims                     232
       Page Swaps                        0
-      Voluntary Context Switches        262
-      Involuntary Context Switches      13
-      Block Input Operations            8
-      Block Output Operations           12216856
+      Voluntary Context Switches        194
+      Involuntary Context Switches      42
+      Block Input Operations            0
+      Block Output Operations           12232216
       
 
 758        
@@ -1520,7 +1520,7 @@ NY_SRCHG_EFF_DT=. LVY_DT=. IRS1099_RPT_IN=  LOC_1099_RPT_IN=  CO_TYP_DC=  LAW_FR
 PREF_PMT_METH_DC=  DEAD_DT0=. ELCTR_PMT_HLD_IN=N CNFDL_CNTC_IN=N EDU_LVL=  CLMT_ID_TYP_DC=  EFT_STT_DC=  EFT_LST_ACCPT_DT=.
 POL_NR=Q855103368 PRIM_BODY_PART=MultipleBodyParts act_count=9 note_count=35 doc_count=50 TOTAL_TOUCHES=63 VIEWS=35 ASGN=0 CLOSES=4
 CUSTOM_EVNTS=5 DELAYS=19 ALL_OTHER=0 num_stuff=94 Attribute_Name=Q855103368 Attribute_Description=Y MM_indic=Y rpt_yr=2019
-cls_yr=2020 cycle_time=1 AGE_CURR=62 height_ft=0 inches=0 height_in=0 HEIGHT=0 BMI=. _ERROR_=1 _N_=18330
+cls_yr=2020 cycle_time=1 AGE_CURR=62 height_ft=0 inches=0 height_in=0 HEIGHT=0 BMI=. _ERROR_=1 _N_=18406
 NOTE: Division by zero detected at line 775 column 21.
 CLM_NTRL_ID=155843 POL_NTRL_ID=156852 WRK_CMPNST_NTRL_ID=155741 CATS_NTRL_ID=. CLMT_ID=2413037 RPT_DT=25JAN2016:09:47:33.236000
 CLS_DT=04OCT2019:09:08:14.383000 EMPT_INJ_IN=Y LOSS_DT=22JAN2016:12:01:00.000000 PRG_DT=. DEAD_DT=. CLM_NR=A00000003776
@@ -1627,9 +1627,9 @@ AUTO_SYNC_DC=Suspended PREF_CNTC_TYP_DC=  PREF_LANG_TYP_DC=  OTHR_PREF_LANG_DC= 
 NY_SRCHG_IN=N CNTC_MGR_CNTC_LNK_PEND_IN=N MED_PRVD_IN=N NY_SRCHG_EFF_DT=. LVY_DT=. IRS1099_RPT_IN=  LOC_1099_RPT_IN=  CO_TYP_DC= 
 LAW_FRM_IN=N IRS_TIN_NM_MTCH_IN=  ADD_CNTC_WTH_TX_ID_IN=N PREF_PMT_METH_DC=  DEAD_DT0=. ELCTR_PMT_HLD_IN=N CNFDL_CNTC_IN=  EDU_LVL= 
 CLMT_ID_TYP_DC=  EFT_STT_DC=  EFT_LST_ACCPT_DT=. POL_NR=Q867200152 PRIM_BODY_PART=MultipleBodyParts act_count=189 note_count=94
-doc_count=325 TOTAL_TOUCHES=264 VIEWS=166 ASGN=1 CLOSES=3 CUSTOM_EVNTS=12 DELAYS=68 ALL_OTHER=14 num_stuff=608
+doc_count=326 TOTAL_TOUCHES=264 VIEWS=166 ASGN=1 CLOSES=3 CUSTOM_EVNTS=12 DELAYS=68 ALL_OTHER=14 num_stuff=609
 Attribute_Name=Q867200152 Attribute_Description=N MM_indic=Y rpt_yr=2016 cls_yr=2019 cycle_time=3 AGE_CURR=28 height_ft=0 inches=0
-height_in=0 HEIGHT=0 BMI=. _ERROR_=1 _N_=42471
+height_in=0 HEIGHT=0 BMI=. _ERROR_=1 _N_=42572
 NOTE: Division by zero detected at line 775 column 21.
 CLM_NTRL_ID=188352 POL_NTRL_ID=191556 WRK_CMPNST_NTRL_ID=178402 CATS_NTRL_ID=. CLMT_ID=4145933 RPT_DT=28NOV2016:10:31:02.729000
 CLS_DT=18APR2019:14:08:04.757000 EMPT_INJ_IN=Y LOSS_DT=21NOV2016:12:00:00.000000 PRG_DT=. DEAD_DT=. CLM_NR=A00000027105 EXAM_DT=.
@@ -1740,7 +1740,7 @@ IRS1099_RPT_IN=  LOC_1099_RPT_IN=  CO_TYP_DC=  LAW_FRM_IN=N IRS_TIN_NM_MTCH_IN= 
 DEAD_DT0=. ELCTR_PMT_HLD_IN=N CNFDL_CNTC_IN=  EDU_LVL=  CLMT_ID_TYP_DC=  EFT_STT_DC=  EFT_LST_ACCPT_DT=. POL_NR=Q872800787
 PRIM_BODY_PART=UpperExtremities act_count=164 note_count=136 doc_count=501 TOTAL_TOUCHES=347 VIEWS=210 ASGN=4 CLOSES=4
 CUSTOM_EVNTS=15 DELAYS=90 ALL_OTHER=24 num_stuff=801 Attribute_Name=Q872800787 Attribute_Description=N MM_indic=Y rpt_yr=2016
-cls_yr=2019 cycle_time=3 AGE_CURR=74 height_ft=0 inches=0 height_in=0 HEIGHT=0 BMI=. _ERROR_=1 _N_=48095
+cls_yr=2019 cycle_time=3 AGE_CURR=74 height_ft=0 inches=0 height_in=0 HEIGHT=0 BMI=. _ERROR_=1 _N_=48199
 NOTE: Division by zero detected at line 775 column 21.
 CLM_NTRL_ID=13577186 POL_NTRL_ID=13877263 WRK_CMPNST_NTRL_ID=1025797 CATS_NTRL_ID=. CLMT_ID=243694655
 RPT_DT=20MAY2024:10:36:53.869000 CLS_DT=. EMPT_INJ_IN=Y LOSS_DT=16MAY2024:12:00:00.000000 PRG_DT=. DEAD_DT=. CLM_NR=A00005892543
@@ -1855,7 +1855,7 @@ PREF_PMT_METH_DC=SocialSecurityNumber DEAD_DT0=. ELCTR_PMT_HLD_IN=N CNFDL_CNTC_I
 EFT_STT_DC=  EFT_LST_ACCPT_DT=. POL_NR=Q876900410 PRIM_BODY_PART=UpperExtremities act_count=94 note_count=207 doc_count=188
 TOTAL_TOUCHES=327 VIEWS=175 ASGN=1 CLOSES=4 CUSTOM_EVNTS=18 DELAYS=126 ALL_OTHER=3 num_stuff=489 Attribute_Name=Q876900410
 Attribute_Description=N MM_indic=Y rpt_yr=2024 cls_yr=. cycle_time=. AGE_CURR=16 height_ft=0 inches=0 height_in=0 HEIGHT=0 BMI=.
-_ERROR_=1 _N_=54675
+_ERROR_=1 _N_=54781
 NOTE: Division by zero detected at line 775 column 21.
 CLM_NTRL_ID=168183 POL_NTRL_ID=170945 WRK_CMPNST_NTRL_ID=168079 CATS_NTRL_ID=. CLMT_ID=3477816 RPT_DT=17AUG2016:14:03:07.934000
 CLS_DT=07FEB2017:14:49:22.100000 EMPT_INJ_IN=Y LOSS_DT=16AUG2016:14:00:00.000000 PRG_DT=. DEAD_DT=. CLM_NR=A00000013114
@@ -1965,7 +1965,7 @@ IRS1099_RPT_IN=  LOC_1099_RPT_IN=  CO_TYP_DC=  LAW_FRM_IN=N IRS_TIN_NM_MTCH_IN= 
 DEAD_DT0=. ELCTR_PMT_HLD_IN=  CNFDL_CNTC_IN=  EDU_LVL=  CLMT_ID_TYP_DC=  EFT_STT_DC=  EFT_LST_ACCPT_DT=. POL_NR=Q892100634
 PRIM_BODY_PART=Head act_count=11 note_count=13 doc_count=10 TOTAL_TOUCHES=30 VIEWS=15 ASGN=0 CLOSES=1 CUSTOM_EVNTS=3 DELAYS=9
 ALL_OTHER=2 num_stuff=34 Attribute_Name=Q892100634 Attribute_Description=N MM_indic=Y rpt_yr=2016 cls_yr=2017 cycle_time=1
-AGE_CURR=55 height_ft=0 inches=0 height_in=0 HEIGHT=0 BMI=. _ERROR_=1 _N_=79934
+AGE_CURR=55 height_ft=0 inches=0 height_in=0 HEIGHT=0 BMI=. _ERROR_=1 _N_=80066
 NOTE: Division by zero detected at line 775 column 21.
 CLM_NTRL_ID=133917 POL_NTRL_ID=133917 WRK_CMPNST_NTRL_ID=133917 CATS_NTRL_ID=. CLMT_ID=1583222 RPT_DT=29JUN2010:00:00:00.000000
 CLS_DT=27APR2018:09:51:39.956000 EMPT_INJ_IN=  LOSS_DT=28JUN2010:00:00:00.000000 PRG_DT=. DEAD_DT=. CLM_NR=010190278198 EXAM_DT=.
@@ -2079,7 +2079,7 @@ IRS1099_RPT_IN=  LOC_1099_RPT_IN=  CO_TYP_DC=  LAW_FRM_IN=N IRS_TIN_NM_MTCH_IN= 
 DEAD_DT0=. ELCTR_PMT_HLD_IN=  CNFDL_CNTC_IN=  EDU_LVL=  CLMT_ID_TYP_DC=  EFT_STT_DC=  EFT_LST_ACCPT_DT=. POL_NR=Q905400115
 PRIM_BODY_PART=UpperExtremities act_count=90 note_count=521 doc_count=322 TOTAL_TOUCHES=252 VIEWS=144 ASGN=1 CLOSES=4 CUSTOM_EVNTS=6
 DELAYS=75 ALL_OTHER=22 num_stuff=933 Attribute_Name=Q905400115 Attribute_Description=N MM_indic=Y rpt_yr=2010 cls_yr=2018
-cycle_time=8 AGE_CURR=63 height_ft=0 inches=0 height_in=0 HEIGHT=0 BMI=. _ERROR_=1 _N_=99173
+cycle_time=8 AGE_CURR=63 height_ft=0 inches=0 height_in=0 HEIGHT=0 BMI=. _ERROR_=1 _N_=99319
 NOTE: Division by zero detected at line 775 column 21.
 CLM_NTRL_ID=153213 POL_NTRL_ID=153713 WRK_CMPNST_NTRL_ID=153113 CATS_NTRL_ID=. CLMT_ID=2150993 RPT_DT=30NOV2015:12:01:48.357000
 CLS_DT=16AUG2016:08:58:41.294000 EMPT_INJ_IN=Y LOSS_DT=27OCT2015:10:30:00.000000 PRG_DT=. DEAD_DT=. CLM_NR=A00000001688 EXAM_DT=.
@@ -2193,32 +2193,32 @@ IRS1099_RPT_IN=  LOC_1099_RPT_IN=  CO_TYP_DC=  LAW_FRM_IN=N IRS_TIN_NM_MTCH_IN= 
 DEAD_DT0=. ELCTR_PMT_HLD_IN=  CNFDL_CNTC_IN=  EDU_LVL=  CLMT_ID_TYP_DC=  EFT_STT_DC=  EFT_LST_ACCPT_DT=. POL_NR=Q955101085
 PRIM_BODY_PART=UpperExtremities act_count=33 note_count=33 doc_count=59 TOTAL_TOUCHES=86 VIEWS=53 ASGN=1 CLOSES=3 CUSTOM_EVNTS=3
 DELAYS=23 ALL_OTHER=3 num_stuff=125 Attribute_Name=  Attribute_Description=  MM_indic=N rpt_yr=2015 cls_yr=2016 cycle_time=1
-AGE_CURR=58 height_ft=0 inches=0 height_in=0 HEIGHT=0 BMI=. _ERROR_=1 _N_=171648
+AGE_CURR=58 height_ft=0 inches=0 height_in=0 HEIGHT=0 BMI=. _ERROR_=1 _N_=171860
 NOTE: Missing values were generated as a result of performing an operation on missing values.
       Each place is given by: (Number of times) at (Line):(Column).
-      7945 at 761:11    7945 at 761:16    7945 at 762:22    88943 at 767:14   88943 at 767:28   88943 at 768:19   88943 at 768:21
-      88943 at 770:43   88943 at 773:21   88300 at 775:12   998 at 775:21     998 at 775:30     
+      7953 at 761:11    7953 at 761:16    7953 at 762:22    89005 at 767:14   89005 at 767:28   89005 at 768:19   89005 at 768:21
+      89005 at 770:43   89005 at 773:21   88361 at 775:12   1000 at 775:21    1000 at 775:30    
 NOTE: Mathematical operations could not be performed at the following places. The results of the operations have been set to 
       missing values.
       Each place is given by: (Number of times) at (Line):(Column).
       7 at 775:21   
-NOTE: There were 190881 observations read from the data set WORK.NUM_TOUCH2.
-NOTE: The data set WORK.NUM_TOUCH3 has 190881 observations and 711 variables.
+NOTE: There were 191120 observations read from the data set WORK.NUM_TOUCH2.
+NOTE: The data set WORK.NUM_TOUCH3 has 191120 observations and 711 variables.
 NOTE: DATA statement used (Total process time):
-      real time           4.08 seconds
-      user cpu time       0.37 seconds
-      system cpu time     3.64 seconds
-      memory              3146.87k
-      OS Memory           22436.00k
-      Timestamp           10/06/2026 10:02:07 PM
+      real time           4.78 seconds
+      user cpu time       0.31 seconds
+      system cpu time     4.34 seconds
+      memory              3144.81k
+      OS Memory           22692.00k
+      Timestamp           10/13/2026 03:40:52 AM
       Step Count                        33  Switch Count  1
-      Page Faults                       37
-      Page Reclaims                     255
+      Page Faults                       36
+      Page Reclaims                     254
       Page Swaps                        0
-      Voluntary Context Switches        344
-      Involuntary Context Switches      12
-      Block Input Operations            8
-      Block Output Operations           12217152
+      Voluntary Context Switches        179
+      Involuntary Context Switches      33
+      Block Input Operations            456
+      Block Output Operations           12232496
       
 
 778        
@@ -2414,23 +2414,23 @@ NOTE: DATA statement used (Total process time):
 968        		
 969        run;
 
-NOTE: There were 190881 observations read from the data set WORK.NUM_TOUCH3.
-NOTE: The data set WORK.NUM_TOUCH4 has 190881 observations and 184 variables.
+NOTE: There were 191120 observations read from the data set WORK.NUM_TOUCH3.
+NOTE: The data set WORK.NUM_TOUCH4 has 191120 observations and 184 variables.
 NOTE: DATA statement used (Total process time):
-      real time           1.64 seconds
-      user cpu time       0.18 seconds
-      system cpu time     1.46 seconds
-      memory              2439.53k
-      OS Memory           22436.00k
-      Timestamp           10/06/2026 10:02:08 PM
+      real time           1.83 seconds
+      user cpu time       0.16 seconds
+      system cpu time     1.64 seconds
+      memory              2447.68k
+      OS Memory           22692.00k
+      Timestamp           10/13/2026 03:40:54 AM
       Step Count                        34  Switch Count  1
       Page Faults                       6
-      Page Reclaims                     228
+      Page Reclaims                     243
       Page Swaps                        0
-      Voluntary Context Switches        47
+      Voluntary Context Switches        36
       Involuntary Context Switches      7
       Block Input Operations            0
-      Block Output Operations           1111088
+      Block Output Operations           1112120
       
 
 970        	
@@ -2516,23 +2516,23 @@ WARNING: The variable EMPR_QUES_VLDTY_IN in the DROP, KEEP, or RENAME list has n
 WARNING: The variable PRE_EXIST_COND_IN in the DROP, KEEP, or RENAME list has never been referenced.
 WARNING: The variable RTN_TO_WORK_ACTL_IN in the DROP, KEEP, or RENAME list has never been referenced.
 WARNING: The variable CORP_REFL_WHL_BOSY_IN in the DROP, KEEP, or RENAME list has never been referenced.
-NOTE: There were 190881 observations read from the data set WORK.NUM_TOUCH4.
-NOTE: The data set WORK.WC_WPC_TRIMMED has 190881 observations and 67 variables.
+NOTE: There were 191120 observations read from the data set WORK.NUM_TOUCH4.
+NOTE: The data set WORK.WC_WPC_TRIMMED has 191120 observations and 67 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.23 seconds
-      user cpu time       0.02 seconds
-      system cpu time     0.20 seconds
-      memory              1720.25k
-      OS Memory           22436.00k
-      Timestamp           10/06/2026 10:02:09 PM
+      real time           0.30 seconds
+      user cpu time       0.03 seconds
+      system cpu time     0.26 seconds
+      memory              1716.65k
+      OS Memory           22692.00k
+      Timestamp           10/13/2026 03:40:54 AM
       Step Count                        35  Switch Count  1
-      Page Faults                       6
+      Page Faults                       9
       Page Reclaims                     218
       Page Swaps                        0
-      Voluntary Context Switches        23
+      Voluntary Context Switches        26
       Involuntary Context Switches      1
-      Block Input Operations            0
-      Block Output Operations           520224
+      Block Input Operations            48
+      Block Output Operations           520744
       
 
 1047       
@@ -2927,23 +2927,23 @@ NOTE: DATA statement used (Total process time):
 1432       RUN;
 
 NOTE: Variable SMKR_IN is uninitialized.
-NOTE: There were 190881 observations read from the data set WORK.WC_WPC_TRIMMED.
-NOTE: The data set WORK.WC_WPC_SCRUBBED has 190881 observations and 191 variables.
+NOTE: There were 191120 observations read from the data set WORK.WC_WPC_TRIMMED.
+NOTE: The data set WORK.WC_WPC_SCRUBBED has 191120 observations and 191 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.38 seconds
-      user cpu time       0.15 seconds
-      system cpu time     0.23 seconds
-      memory              1930.93k
-      OS Memory           22436.00k
-      Timestamp           10/06/2026 10:02:09 PM
+      real time           0.44 seconds
+      user cpu time       0.13 seconds
+      system cpu time     0.30 seconds
+      memory              1927.31k
+      OS Memory           22692.00k
+      Timestamp           10/13/2026 03:40:55 AM
       Step Count                        36  Switch Count  1
-      Page Faults                       12
-      Page Reclaims                     225
+      Page Faults                       6
+      Page Reclaims                     224
       Page Swaps                        0
-      Voluntary Context Switches        32
-      Involuntary Context Switches      1
-      Block Input Operations            8
-      Block Output Operations           888920
+      Voluntary Context Switches        35
+      Involuntary Context Switches      6
+      Block Input Operations            88
+      Block Output Operations           889944
       
 
 1433       
@@ -3075,21 +3075,21 @@ NOTE: DATA statement used (Total process time):
 1559       	;
 1560       run;
 
-NOTE: There were 190881 observations read from the data set WORK.WC_WPC_SCRUBBED.
-NOTE: The data set WORK.WC_WPC_SCRUBBED_FOR_SCORING has 190881 observations and 41 variables.
+NOTE: There were 191120 observations read from the data set WORK.WC_WPC_SCRUBBED.
+NOTE: The data set WORK.WC_WPC_SCRUBBED_FOR_SCORING has 191120 observations and 41 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.13 seconds
+      real time           0.18 seconds
       user cpu time       0.01 seconds
-      system cpu time     0.12 seconds
-      memory              1607.28k
-      OS Memory           22436.00k
-      Timestamp           10/06/2026 10:02:09 PM
+      system cpu time     0.15 seconds
+      memory              1596.53k
+      OS Memory           22692.00k
+      Timestamp           10/13/2026 03:40:55 AM
       Step Count                        37  Switch Count  1
       Page Faults                       6
       Page Reclaims                     218
       Page Swaps                        0
-      Voluntary Context Switches        15
-      Involuntary Context Switches      1
+      Voluntary Context Switches        13
+      Involuntary Context Switches      10
       Block Input Operations            0
       Block Output Operations           134696
       
@@ -3107,20 +3107,20 @@ NOTE: One or more variables were converted because the data type is not supporte
 NOTE: The import data set has 144354 observations and 34 variables.
 NOTE: WORK.WORKLOAD_WC data set was successfully created.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           23.43 seconds
-      user cpu time       23.12 seconds
-      system cpu time     0.03 seconds
-      memory              49477.71k
+      real time           24.22 seconds
+      user cpu time       23.06 seconds
+      system cpu time     0.31 seconds
+      memory              49469.12k
       OS Memory           75552.00k
-      Timestamp           10/06/2026 10:02:33 PM
+      Timestamp           10/13/2026 03:41:19 AM
       Step Count                        38  Switch Count  1
-      Page Faults                       92
-      Page Reclaims                     12440
+      Page Faults                       39
+      Page Reclaims                     12466
       Page Swaps                        0
-      Voluntary Context Switches        67
-      Involuntary Context Switches      122
-      Block Input Operations            57272
-      Block Output Operations           99872
+      Voluntary Context Switches        195
+      Involuntary Context Switches      303
+      Block Input Operations            58920
+      Block Output Operations           99880
       
 
 1568       
@@ -3133,23 +3133,23 @@ NOTE: PROCEDURE IMPORT used (Total process time):
 
 NOTE: One or more variables were converted because the data type is not supported by the V9 engine. For more details, run with 
       options MSGLEVEL=I.
-NOTE: The import data set has 9450 observations and 24 variables.
+NOTE: The import data set has 9450 observations and 30 variables.
 NOTE: WORK.WC_HR data set was successfully created.
 NOTE: PROCEDURE IMPORT used (Total process time):
-      real time           0.84 seconds
-      user cpu time       0.83 seconds
+      real time           1.08 seconds
+      user cpu time       1.03 seconds
       system cpu time     0.01 seconds
-      memory              5322.50k
-      OS Memory           25588.00k
-      Timestamp           10/06/2026 10:02:33 PM
+      memory              5453.46k
+      OS Memory           25844.00k
+      Timestamp           10/13/2026 03:41:20 AM
       Step Count                        39  Switch Count  1
       Page Faults                       0
-      Page Reclaims                     799
+      Page Reclaims                     820
       Page Swaps                        0
-      Voluntary Context Switches        20
-      Involuntary Context Switches      5
-      Block Input Operations            2088
-      Block Output Operations           4632
+      Voluntary Context Switches        23
+      Involuntary Context Switches      21
+      Block Input Operations            2832
+      Block Output Operations           4136
       
 
 1575       
@@ -3164,20 +3164,20 @@ NOTE: There were 144354 observations read from the data set WORK.WORKLOAD_WC.
       WHERE Status in ('Completed', 'New');
 NOTE: The data set WORK.WORKLOAD_WC has 144354 observations and 35 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.05 seconds
-      user cpu time       0.01 seconds
-      system cpu time     0.03 seconds
-      memory              1435.56k
-      OS Memory           22692.00k
-      Timestamp           10/06/2026 10:02:34 PM
+      real time           0.07 seconds
+      user cpu time       0.02 seconds
+      system cpu time     0.05 seconds
+      memory              1459.50k
+      OS Memory           22948.00k
+      Timestamp           10/13/2026 03:41:20 AM
       Step Count                        40  Switch Count  1
-      Page Faults                       14
-      Page Reclaims                     214
+      Page Faults                       8
+      Page Reclaims                     223
       Page Swaps                        0
-      Voluntary Context Switches        9
-      Involuntary Context Switches      1
-      Block Input Operations            0
-      Block Output Operations           104472
+      Voluntary Context Switches        19
+      Involuntary Context Switches      4
+      Block Input Operations            136
+      Block Output Operations           104464
       
 
 1580       
@@ -3186,23 +3186,24 @@ NOTE: DATA statement used (Total process time):
 1583       		else Adj_title = Adj_position;
 1584       run;
 
+NOTE: Variable Adj_position is uninitialized.
 NOTE: There were 9450 observations read from the data set WORK.WC_HR.
-NOTE: The data set WORK.WC_HR has 9450 observations and 25 variables.
+NOTE: The data set WORK.WC_HR has 9450 observations and 32 variables.
 NOTE: DATA statement used (Total process time):
       real time           0.00 seconds
       user cpu time       0.00 seconds
       system cpu time     0.01 seconds
-      memory              1376.09k
-      OS Memory           22692.00k
-      Timestamp           10/06/2026 10:02:34 PM
+      memory              1418.59k
+      OS Memory           22948.00k
+      Timestamp           10/13/2026 03:41:20 AM
       Step Count                        41  Switch Count  1
       Page Faults                       8
-      Page Reclaims                     218
+      Page Reclaims                     216
       Page Swaps                        0
       Voluntary Context Switches        6
-      Involuntary Context Switches      0
+      Involuntary Context Switches      3
       Block Input Operations            0
-      Block Output Operations           5136
+      Block Output Operations           4624
       
 
 1585       
@@ -3216,75 +3217,79 @@ NOTE: DATA statement used (Total process time):
 1593       	create table wc_hr2 as
 1594       	select distinct Adj_Number as Adj_Number, Adjuster_Team_Branch as Adj_Team
 1595       	from wc_hr;
-NOTE: Table WORK.WC_HR2 created, with 125 rows and 2 columns.
-
+ERROR: The following columns were not found in the contributing tables: Adjuster_Team_Branch, Adj_Number.
+NOTE: PROC SQL set option NOEXEC and will continue to check the syntax of statements.
 1596       quit;
+NOTE: The SAS System stopped processing this step because of errors.
 NOTE: PROCEDURE SQL used (Total process time):
       real time           0.00 seconds
       user cpu time       0.01 seconds
       system cpu time     0.00 seconds
-      memory              5722.90k
-      OS Memory           27300.00k
-      Timestamp           10/06/2026 10:02:34 PM
-      Step Count                        42  Switch Count  1
-      Page Faults                       0
-      Page Reclaims                     425
+      memory              5723.81k
+      OS Memory           27556.00k
+      Timestamp           10/13/2026 03:41:20 AM
+      Step Count                        42  Switch Count  0
+      Page Faults                       1
+      Page Reclaims                     144
       Page Swaps                        0
-      Voluntary Context Switches        6
+      Voluntary Context Switches        5
       Involuntary Context Switches      0
-      Block Input Operations            0
-      Block Output Operations           536
+      Block Input Operations            40
+      Block Output Operations           8
       
-
 1597       
+
+
 1598       proc sql;
 1599       	create table workload_wc1 as
 1600       	select a.*, b.*
 1601       	from workload_wc as a left join wc_hr2 as b
 1602       	on a.AdjNu = b.Adj_Number;
-NOTE: Table WORK.WORKLOAD_WC1 created, with 159418 rows and 37 columns.
-
+ERROR: File WORK.WC_HR2.DATA does not exist.
+NOTE: PROC SQL set option NOEXEC and will continue to check the syntax of statements.
 1603       quit;
+NOTE: The SAS System stopped processing this step because of errors.
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           0.14 seconds
-      user cpu time       0.08 seconds
-      system cpu time     0.11 seconds
-      memory              70150.34k
-      OS Memory           89532.00k
-      Timestamp           10/06/2026 10:02:34 PM
-      Step Count                        43  Switch Count  2
-      Page Faults                       164
-      Page Reclaims                     2497
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+      memory              628.12k
+      OS Memory           22432.00k
+      Timestamp           10/13/2026 03:41:20 AM
+      Step Count                        43  Switch Count  0
+      Page Faults                       1
+      Page Reclaims                     142
       Page Swaps                        0
-      Voluntary Context Switches        1568
-      Involuntary Context Switches      4
-      Block Input Operations            0
-      Block Output Operations           230960
+      Voluntary Context Switches        2
+      Involuntary Context Switches      0
+      Block Input Operations            80
+      Block Output Operations           0
       
-
 1604       
+
+
 1605       data workload_wc2; set workload_wc1;
+ERROR: File WORK.WORKLOAD_WC1.DATA does not exist.
 1606       	where Adj_Team is not null;
 1607       run;
 
-NOTE: There were 158298 observations read from the data set WORK.WORKLOAD_WC1.
-      WHERE Adj_Team is not null;
-NOTE: The data set WORK.WORKLOAD_WC2 has 158298 observations and 37 variables.
+NOTE: The SAS System stopped processing this step because of errors.
+WARNING: The data set WORK.WORKLOAD_WC2 may be incomplete.  When this step was stopped there were 0 observations and 0 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.04 seconds
-      user cpu time       0.01 seconds
-      system cpu time     0.04 seconds
-      memory              1430.40k
-      OS Memory           22948.00k
-      Timestamp           10/06/2026 10:02:34 PM
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+      memory              404.25k
+      OS Memory           22172.00k
+      Timestamp           10/13/2026 03:41:20 AM
       Step Count                        44  Switch Count  1
       Page Faults                       8
-      Page Reclaims                     219
+      Page Reclaims                     48
       Page Swaps                        0
-      Voluntary Context Switches        11
+      Voluntary Context Switches        6
       Involuntary Context Switches      0
-      Block Input Operations            0
-      Block Output Operations           119312
+      Block Input Operations            8
+      Block Output Operations           168
       
 
 1608       data workload_wc2;
@@ -3293,23 +3298,23 @@ NOTE: DATA statement used (Total process time):
 1611       run;
 
 WARNING: The variable 'Adjuster Work Group'n in the DROP, KEEP, or RENAME list has never been referenced.
-NOTE: There were 158298 observations read from the data set WORK.WORKLOAD_WC2.
-NOTE: The data set WORK.WORKLOAD_WC2 has 158298 observations and 37 variables.
+NOTE: There were 0 observations read from the data set WORK.WORKLOAD_WC2.
+NOTE: The data set WORK.WORKLOAD_WC2 has 0 observations and 0 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.04 seconds
-      user cpu time       0.01 seconds
-      system cpu time     0.04 seconds
-      memory              1421.87k
-      OS Memory           22948.00k
-      Timestamp           10/06/2026 10:02:34 PM
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+      memory              600.43k
+      OS Memory           22428.00k
+      Timestamp           10/13/2026 03:41:20 AM
       Step Count                        45  Switch Count  1
-      Page Faults                       17
-      Page Reclaims                     222
+      Page Faults                       8
+      Page Reclaims                     52
       Page Swaps                        0
-      Voluntary Context Switches        16
+      Voluntary Context Switches        8
       Involuntary Context Switches      0
-      Block Input Operations            0
-      Block Output Operations           119320
+      Block Input Operations            8
+      Block Output Operations           168
       
 
 1612       
@@ -3318,51 +3323,62 @@ NOTE: DATA statement used (Total process time):
 1615       	select a.*, b.ClaimKey, b.AdjNu, b.Status, b.Adj_Team, b.Adjuster_Work_Group, b.PayPeriodEnd
 1616       	from wc_wpc_scrubbed_for_scoring as a left join workload_wc2 as b
 1617       	on a.CLM_NR = b.ClaimNu;
-NOTE: Table WORK.WC_WPC_SCRUBBED_FOR_SCORING1 created, with 274011 rows and 47 columns.
-
+ERROR: Table WORK.WORKLOAD_WC2 doesn't have any columns. PROC SQL requires each of its tables to have at least 1 column.
+ERROR: Column ClaimNu could not be found in the table/view identified with the correlation name B.
+ERROR: Column ClaimNu could not be found in the table/view identified with the correlation name B.
+ERROR: Column ClaimKey could not be found in the table/view identified with the correlation name B.
+ERROR: Column AdjNu could not be found in the table/view identified with the correlation name B.
+ERROR: Column Status could not be found in the table/view identified with the correlation name B.
+ERROR: Column Adj_Team could not be found in the table/view identified with the correlation name B.
+ERROR: Column Adjuster_Work_Group could not be found in the table/view identified with the correlation name B.
+ERROR: Column PayPeriodEnd could not be found in the table/view identified with the correlation name B.
+NOTE: PROC SQL set option NOEXEC and will continue to check the syntax of statements.
 1618       quit;
+NOTE: The SAS System stopped processing this step because of errors.
 NOTE: PROCEDURE SQL used (Total process time):
-      real time           0.25 seconds
-      user cpu time       0.16 seconds
-      system cpu time     0.20 seconds
-      memory              83093.84k
-      OS Memory           102352.00k
-      Timestamp           10/06/2026 10:02:34 PM
-      Step Count                        46  Switch Count  2
-      Page Faults                       240
-      Page Reclaims                     6769
+      real time           0.00 seconds
+      user cpu time       0.01 seconds
+      system cpu time     0.00 seconds
+      memory              5955.68k
+      OS Memory           28068.00k
+      Timestamp           10/13/2026 03:41:20 AM
+      Step Count                        46  Switch Count  0
+      Page Faults                       0
+      Page Reclaims                     145
       Page Swaps                        0
-      Voluntary Context Switches        3401
-      Involuntary Context Switches      11
-      Block Input Operations            0
-      Block Output Operations           414256
+      Voluntary Context Switches        1
+      Involuntary Context Switches      1
+      Block Input Operations            8
+      Block Output Operations           0
       
-
 1619       
 1620       /*"Adjuster Work Group"n as */
 1621       
+
+
 1622       data wc_wpc_scrubbed_for_scoring1; set wc_wpc_scrubbed_for_scoring1;
+ERROR: File WORK.WC_WPC_SCRUBBED_FOR_SCORING1.DATA does not exist.
 1623       	where CLaimKey ne "";
 1624       run;
 
-NOTE: There were 157308 observations read from the data set WORK.WC_WPC_SCRUBBED_FOR_SCORING1.
-      WHERE CLaimKey not = ' ';
-NOTE: The data set WORK.WC_WPC_SCRUBBED_FOR_SCORING1 has 157308 observations and 47 variables.
+NOTE: The SAS System stopped processing this step because of errors.
+WARNING: The data set WORK.WC_WPC_SCRUBBED_FOR_SCORING1 may be incomplete.  When this step was stopped there were 0 observations 
+         and 0 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.07 seconds
-      user cpu time       0.01 seconds
-      system cpu time     0.05 seconds
-      memory              1430.68k
-      OS Memory           22692.00k
-      Timestamp           10/06/2026 10:02:34 PM
+      real time           0.00 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.00 seconds
+      memory              406.75k
+      OS Memory           22428.00k
+      Timestamp           10/13/2026 03:41:20 AM
       Step Count                        47  Switch Count  1
-      Page Faults                       6
-      Page Reclaims                     220
+      Page Faults                       7
+      Page Reclaims                     14
       Page Swaps                        0
-      Voluntary Context Switches        15
-      Involuntary Context Switches      2
+      Voluntary Context Switches        6
+      Involuntary Context Switches      1
       Block Input Operations            0
-      Block Output Operations           140840
+      Block Output Operations           168
       
 
 1625       
@@ -3370,23 +3386,23 @@ NOTE: DATA statement used (Total process time):
 1627       data WC.WC_WPC_for_scoring; set wc_wpc_scrubbed_for_scoring1;
 1628       	run;
 
-NOTE: There were 157308 observations read from the data set WORK.WC_WPC_SCRUBBED_FOR_SCORING1.
-NOTE: The data set WC.WC_WPC_FOR_SCORING has 157308 observations and 47 variables.
+NOTE: There were 0 observations read from the data set WORK.WC_WPC_SCRUBBED_FOR_SCORING1.
+NOTE: The data set WC.WC_WPC_FOR_SCORING has 0 observations and 0 variables.
 NOTE: DATA statement used (Total process time):
-      real time           0.15 seconds
-      user cpu time       0.01 seconds
-      system cpu time     0.06 seconds
-      memory              1421.96k
-      OS Memory           22692.00k
-      Timestamp           10/06/2026 10:02:34 PM
+      real time           0.02 seconds
+      user cpu time       0.00 seconds
+      system cpu time     0.01 seconds
+      memory              598.81k
+      OS Memory           22428.00k
+      Timestamp           10/13/2026 03:41:20 AM
       Step Count                        48  Switch Count  1
-      Page Faults                       6
-      Page Reclaims                     221
+      Page Faults                       8
+      Page Reclaims                     19
       Page Swaps                        0
-      Voluntary Context Switches        293
-      Involuntary Context Switches      2
+      Voluntary Context Switches        37
+      Involuntary Context Switches      0
       Block Input Operations            32
-      Block Output Operations           140832
+      Block Output Operations           160
       
 
 1629       /**/
@@ -3423,273 +3439,27 @@ NOTE: DATA statement used (Total process time):
 
 NOTE: Unable to open parameter catalog: SASUSER.PARMS.PARMS.SLIST in update mode. Temporary parameter values will be saved to 
 WORK.PARMS.PARMS.SLIST.
-1659        /**********************************************************************
-1660        *   PRODUCT:   SAS
-1661        *   VERSION:   9.4
-1662        *   CREATOR:   External File Interface
-1663        *   DATE:      06OCT26
-1664        *   DESC:      Generated SAS Datastep Code
-1665        *   TEMPLATE SOURCE:  (None Specified.)
-1666        ***********************************************************************/
-1667           data _null_;
-1668           %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
-1669           %let _EFIREC_ = 0;     /* clear export record count macro variable */
-1670           file '/ere/local/shared/actuarial/Share/Claims/WPC/Workers Comp/2026/09-30-2026/WC_WPC_for_scoring.csv' delimiter=','
-1670     !  DSD DROPOVER lrecl=32767;
-1671           if _n_ = 1 then        /* write column names or labels */
-1672            do;
-1673              put
-1674                 "CLM_NR"
-1675              ','
-1676                 "TOTAL_TOUCHES"
-1677              ','
-1678                 "AGE_CURR"
-1679              ','
-1680                 "BMI"
-1681              ','
-1682                 "FRTH_TRTMT_REQR"
-1683              ','
-1684                 "INCID_RPT_ONLY"
-1685              ','
-1686                 "INJ_PRMIS"
-1687              ','
-1688                 "INJ_REG_JOB"
-1689              ','
-1690                 "ISS_INVOLVE"
-1691              ','
-1692                 "JURIS_STATE_PA"
-1693              ','
-1694                 "JURIS_STATE_VA"
-1695              ','
-1696                 "JURIS_STATE_MD"
-1697              ','
-1698                 "JURIS_STATE_NY"
-1699              ','
-1700                 "JURIS_STATE_WV"
-1701              ','
-1702                 "JURIS_STATE_WI"
-1703              ','
-1704                 "JURIS_STATE_NC"
-1705              ','
-1706                 "JURIS_STATE_TN"
-1707              ','
-1708                 "JURIS_STATE_IL"
-1709              ','
-1710                 "JURIS_STATE_IN"
-1711              ','
-1712                 "JURIS_STATE_WASHDC"
-1713              ','
-1714                 "LEGAL_IND"
-1715              ','
-1716                 "LOSS_CAUSE_FALLSLIPTRIP"
-1717              ','
-1718                 "LOSS_CAUSE_CUTSCRAPE"
-1719              ','
-1720                 "LOSS_CAUSE_STRAIN"
-1721              ','
-1722                 "LOSS_CAUSE_VEH"
-1723              ','
-1724                 "CORP_REFL_PRLYS"
-1725              ','
-1726                 "INSD_PNL_EXST"
-1727              ','
-1728                 "PRIOR_TRTMT_EXST"
-1729              ','
-1730                 "NCCI_INJ_TYP_MEDONLY"
-1731              ','
-1732                 "NCCI_INJ_TYP_TEMPORARYINJ"
-1733              ','
-1734                 "NCCI_INJ_TYP_PERMPARTIAL"
-1735              ','
-1736                 "NCCI_INJ_TYP_PERMTOTAL"
-1737              ','
-1738                 "NCCI_LOSS_TYP_TRAUMA"
-1739              ','
-1740                 "NCCI_LOSS_TYP_CUMULATIVE"
-1741              ','
-1742                 "VCTNL_RHAB_INCL_INDEM"
-1743              ','
-1744                 "MECH_DFCT_INVLV"
-1745              ','
-1746                 "PHYS_RSTRC"
-1747              ','
-1748                 "PRIM_BODY_PART_TRUNK"
-1749              ','
-1750                 "PRIM_BODY_PART_MULTIPLE"
-1751              ','
-1752                 "PRIM_BODY_PART_NECKHEAD"
-1753              ','
-1754                 "MIDDLE_MARKET"
-1755              ','
-1756                 "ClaimKey"
-1757              ','
-1758                 "AdjNu"
-1759              ','
-1760                 "Status"
-1761              ','
-1762                 "Adj_Team"
-1763              ','
-1764                 "Adjuster_Work_Group"
-1765              ','
-1766                 "PayPeriodEnd"
-1767              ;
-1768            end;
-1769          set  WC_WPC_SCRUBBED_FOR_SCORING1   end=EFIEOD;
-1770              format CLM_NR $40. ;
-1771              format TOTAL_TOUCHES best12. ;
-1772              format AGE_CURR best12. ;
-1773              format BMI best12. ;
-1774              format FRTH_TRTMT_REQR best12. ;
-1775              format INCID_RPT_ONLY best12. ;
-1776              format INJ_PRMIS best12. ;
-1777              format INJ_REG_JOB best12. ;
-1778              format ISS_INVOLVE best12. ;
-1779              format JURIS_STATE_PA best12. ;
-1780              format JURIS_STATE_VA best12. ;
-1781              format JURIS_STATE_MD best12. ;
-1782              format JURIS_STATE_NY best12. ;
-1783              format JURIS_STATE_WV best12. ;
-1784              format JURIS_STATE_WI best12. ;
-1785              format JURIS_STATE_NC best12. ;
-1786              format JURIS_STATE_TN best12. ;
-1787              format JURIS_STATE_IL best12. ;
-1788              format JURIS_STATE_IN best12. ;
-1789              format JURIS_STATE_WASHDC best12. ;
-1790              format LEGAL_IND best12. ;
-1791              format LOSS_CAUSE_FALLSLIPTRIP best12. ;
-1792              format LOSS_CAUSE_CUTSCRAPE best12. ;
-1793              format LOSS_CAUSE_STRAIN best12. ;
-1794              format LOSS_CAUSE_VEH best12. ;
-1795              format CORP_REFL_PRLYS best12. ;
-1796              format INSD_PNL_EXST best12. ;
-1797              format PRIOR_TRTMT_EXST best12. ;
-1798              format NCCI_INJ_TYP_MEDONLY best12. ;
-1799              format NCCI_INJ_TYP_TEMPORARYINJ best12. ;
-1800              format NCCI_INJ_TYP_PERMPARTIAL best12. ;
-1801              format NCCI_INJ_TYP_PERMTOTAL best12. ;
-1802              format NCCI_LOSS_TYP_TRAUMA best12. ;
-1803              format NCCI_LOSS_TYP_CUMULATIVE best12. ;
-1804              format VCTNL_RHAB_INCL_INDEM best12. ;
-1805              format MECH_DFCT_INVLV best12. ;
-1806              format PHYS_RSTRC best12. ;
-1807              format PRIM_BODY_PART_TRUNK best12. ;
-1808              format PRIM_BODY_PART_MULTIPLE best12. ;
-1809              format PRIM_BODY_PART_NECKHEAD best12. ;
-1810              format MIDDLE_MARKET best12. ;
-1811              format ClaimKey $36. ;
-1812              format AdjNu $5. ;
-1813              format Status $9. ;
-1814              format Adj_Team $8. ;
-1815              format Adjuster_Work_Group $24. ;
-1816              format PayPeriodEnd best12. ;
-1817            do;
-1818              EFIOUT + 1;
-1819              put CLM_NR $ @;
-1820              put TOTAL_TOUCHES @;
-1821              put AGE_CURR @;
-1822              put BMI @;
-1823              put FRTH_TRTMT_REQR @;
-1824              put INCID_RPT_ONLY @;
-1825              put INJ_PRMIS @;
-1826              put INJ_REG_JOB @;
-1827              put ISS_INVOLVE @;
-1828              put JURIS_STATE_PA @;
-1829              put JURIS_STATE_VA @;
-1830              put JURIS_STATE_MD @;
-1831              put JURIS_STATE_NY @;
-1832              put JURIS_STATE_WV @;
-1833              put JURIS_STATE_WI @;
-1834              put JURIS_STATE_NC @;
-1835              put JURIS_STATE_TN @;
-1836              put JURIS_STATE_IL @;
-1837              put JURIS_STATE_IN @;
-1838              put JURIS_STATE_WASHDC @;
-1839              put LEGAL_IND @;
-1840              put LOSS_CAUSE_FALLSLIPTRIP @;
-1841              put LOSS_CAUSE_CUTSCRAPE @;
-1842              put LOSS_CAUSE_STRAIN @;
-1843              put LOSS_CAUSE_VEH @;
-1844              put CORP_REFL_PRLYS @;
-1845              put INSD_PNL_EXST @;
-1846              put PRIOR_TRTMT_EXST @;
-1847              put NCCI_INJ_TYP_MEDONLY @;
-1848              put NCCI_INJ_TYP_TEMPORARYINJ @;
-1849              put NCCI_INJ_TYP_PERMPARTIAL @;
-1850              put NCCI_INJ_TYP_PERMTOTAL @;
-1851              put NCCI_LOSS_TYP_TRAUMA @;
-1852              put NCCI_LOSS_TYP_CUMULATIVE @;
-1853              put VCTNL_RHAB_INCL_INDEM @;
-1854              put MECH_DFCT_INVLV @;
-1855              put PHYS_RSTRC @;
-1856              put PRIM_BODY_PART_TRUNK @;
-1857              put PRIM_BODY_PART_MULTIPLE @;
-1858              put PRIM_BODY_PART_NECKHEAD @;
-1859              put MIDDLE_MARKET @;
-1860              put ClaimKey $ @;
-1861              put AdjNu $ @;
-1862              put Status $ @;
-1863              put Adj_Team $ @;
-1864              put Adjuster_Work_Group $ @;
-1865              put PayPeriodEnd ;
-1866              ;
-1867            end;
-1868           if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
-1869           if EFIEOD then call symputx('_EFIREC_',EFIOUT);
-1870           run;
-
-NOTE: The file '/ere/local/shared/actuarial/Share/Claims/WPC/Workers Comp/2026/09-30-2026/WC_WPC_for_scoring.csv' is:
-      Filename=/ere/local/shared/actuarial/Share/Claims/WPC/Workers Comp/2026/09-30-2026/WC_WPC_for_scoring.csv,
-      Owner Name=m1761,Group Name=ereapp,
-      Access Permission=-rwx------,
-      Last Modified=06Oct2026:22:02:35
-
-NOTE: 157309 records were written to the file '/ere/local/shared/actuarial/Share/Claims/WPC/Workers 
-      Comp/2026/09-30-2026/WC_WPC_for_scoring.csv'.
-      The minimum record length was 173.
-      The maximum record length was 739.
-NOTE: There were 157308 observations read from the data set WORK.WC_WPC_SCRUBBED_FOR_SCORING1.
-NOTE: DATA statement used (Total process time):
-      real time           0.39 seconds
-      user cpu time       0.32 seconds
-      system cpu time     0.04 seconds
-      memory              10957.43k
-      OS Memory           29648.00k
-      Timestamp           10/06/2026 10:02:35 PM
-      Step Count                        49  Switch Count  0
-      Page Faults                       15
-      Page Reclaims                     256
-      Page Swaps                        0
-      Voluntary Context Switches        171
-      Involuntary Context Switches      2
-      Block Input Operations            0
-      Block Output Operations           58720
-      
-
-157308 records created in /ere/local/shared/actuarial/Share/Claims/WPC/Workers Comp/2026/09-30-2026/WC_WPC_for_scoring.csv from 
-WC_WPC_SCRUBBED_FOR_SCORING1.
-  
-  
-NOTE: "/ere/local/shared/actuarial/Share/Claims/WPC/Workers Comp/2026/09-30-2026/WC_WPC_for_scoring.csv" file was successfully 
-      created.
+NOTE: No variables in data set WORK.WC_WPC_SCRUBBED_FOR_SCORING1.
+ERROR: Export unsuccessful.  See SAS Log for details.
+NOTE: The SAS System stopped processing this step because of errors.
 NOTE: PROCEDURE EXPORT used (Total process time):
-      real time           0.67 seconds
-      user cpu time       0.36 seconds
-      system cpu time     0.06 seconds
-      memory              10957.43k
-      OS Memory           30420.00k
-      Timestamp           10/06/2026 10:02:35 PM
-      Step Count                        49  Switch Count  7
-      Page Faults                       619
-      Page Reclaims                     2593
+      real time           0.43 seconds
+      user cpu time       0.02 seconds
+      system cpu time     0.03 seconds
+      memory              8743.09k
+      OS Memory           27336.00k
+      Timestamp           10/13/2026 03:41:21 AM
+      Step Count                        49  Switch Count  5
+      Page Faults                       533
+      Page Reclaims                     1596
       Page Swaps                        0
-      Voluntary Context Switches        497
+      Voluntary Context Switches        397
       Involuntary Context Switches      2
-      Block Input Operations            4832
-      Block Output Operations           58824
+      Block Input Operations            7496
+      Block Output Operations           88
       
-
-1871       
-1872       ;*';*";*/;quit;run;
-1873                       ods html5 (id=saspy_internal) close;
-1874                       ods listing;
-1875       
+1659       
+1660       ;*';*";*/;quit;run;
+1661                       ods html5 (id=saspy_internal) close;
+1662                       ods listing;
+1663       
